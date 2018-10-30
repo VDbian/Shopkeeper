@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/setting_bg"
+    android:orientation="vertical"
+    tools:context="com.admin.shopkeeper.ui.activity.activityOfBoss.returnanalysis.ReturnAnalysisActivity">
+
+    <include layout="@layout/boss_common_toolbar" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_90sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/sort_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_item"
+                    android:drawableRight="@mipmap/sort_default"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/_32sdp"
+                    android:text="默认" />
+
+                <TextView
+                    android:id="@+id/sort_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_item"
+                    android:drawableRight="@mipmap/sort_default"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/_32sdp"
+                    android:text="上座率" />
+
+                <TextView
+                    android:id="@+id/sort_3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_item"
+                    android:drawableRight="@mipmap/sort_default"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/_32sdp"
+                    android:text="开台率" />
+
+            </LinearLayout>
+
+            <View style="@style/LineHorStyle" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" />
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/setting_bg"
+    android:orientation="vertical"
+    tools:context="com.admin.shopkeeper.ui.activity.activityOfBoss.returnanalysis.ReturnAnalysisActivity">
+
+    <include layout="@layout/boss_common_toolbar" />
+
+    <FrameLayout
+        android:id="@+id/top_search_order_manage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp"
+        android:background="#EFEFF4"
+        android:padding="@dimen/_15sdp">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_food_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:background="@drawable/bg_search"
+            android:hint="搜索"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/_24ssp" />
+
+        <ImageView
+            android:id="@+id/iv_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:src="@mipmap/input_clear"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/item_root"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_88sdp"
+        android:background="@drawable/selector_item"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/_16sdp"
+        android:paddingLeft="@dimen/_32sdp"
+        android:paddingRight="@dimen/_32sdp"
+        android:paddingTop="@dimen/_16sdp">
+
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_32sdp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="菜品"
+            android:textColor="#888888"
+            android:textSize="@dimen/_32ssp" />
+
+        <TextView
+            android:id="@+id/item_type"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="数量"
+            android:textColor="#888888"
+            android:textSize="@dimen/_32ssp" />
+
+
+    </LinearLayout>
+
+    <View style="@style/LineHorStyle" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="重置"
+            android:textColor="#333333"
+            android:textSize="@dimen/_32ssp" />
+
+        <TextView
+            android:id="@+id/tv_bind"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/bosscolorPrimary"
+            android:gravity="center"
+            android:text="取消绑定"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_32ssp" />
+
+    </LinearLayout>
+
+</LinearLayout>

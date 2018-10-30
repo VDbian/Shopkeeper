@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/setting_bg"
+    android:orientation="vertical"
+    tools:context="com.admin.shopkeeper.ui.activity.activityOfBoss.returnanalysis.ReturnAnalysisActivity">
+
+    <include layout="@layout/boss_common_toolbar" />
+
+    <View
+        style="@style/LineHorStyle"
+        android:layout_marginTop="@dimen/_30sdp" />
+
+    <LinearLayout style="@style/SettingItemStyle">
+
+        <TextView
+            style="@style/SettingItemTextStyle"
+            android:text="所属餐厅" />
+
+        <TextView
+            android:id="@+id/member_level_shop_name"
+            style="@style/SettingItemEditStyle"
+            android:gravity="center_vertical"
+            android:hint="智慧餐厅-只读不可写" />
+
+    </LinearLayout>
+
+    <View style="@style/LineHor2Style" />
+
+    <LinearLayout style="@style/SettingItemStyle">
+
+        <TextView
+            style="@style/SettingItemTextStyle"
+            android:text="会员等级" />
+
+        <EditText
+            android:id="@+id/member_level"
+            style="@style/SettingItemEditStyle"
+            android:hint="请输入会员等级" />
+
+    </LinearLayout>
+
+    <View style="@style/LineHor2Style" />
+
+    <LinearLayout style="@style/SettingItemStyle">
+
+        <TextView
+            style="@style/SettingItemTextStyle"
+            android:text="大于积分" />
+
+        <EditText
+            android:id="@+id/member_level_minimum"
+            style="@style/SettingItemEditStyle"
+            android:inputType="number"
+            android:hint="如10" />
+
+    </LinearLayout>
+
+    <View style="@style/LineHor2Style" />
+    <LinearLayout style="@style/SettingItemStyle">
+
+        <TextView
+            style="@style/SettingItemTextStyle"
+            android:text="小于积分" />
+
+        <EditText
+            android:id="@+id/member_level_maximum"
+            style="@style/SettingItemEditStyle"
+            android:inputType="number"
+            android:hint="如1000" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

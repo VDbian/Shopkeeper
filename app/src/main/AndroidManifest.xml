@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.admin.shopkeeper">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="596c872cf43e483871000432" />
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="c5e3d2cde7a95c25feb8229aaf592426" />
+
+        <activity android:name=".ui.activity.splash.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.main.MainActivity"
+            android:label="@string/title_activity_splash"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.activity.login.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".ui.activity.messageDetail.MessageDetailActivity"
+            android:label="@string/title_activity_message_detail" />
+        <activity
+            android:name=".ui.activity.person.info.PersonActivity"
+            android:label="@string/title_activity_person"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".ui.activity.person.setting.PersonSettingActivity"
+            android:label="@string/title_activity_person_setting" />
+        <activity
+            android:name=".ui.activity.person.forget.ForgetPasswordActivity"
+            android:label="@string/title_activity_forget_password" />
+        <activity
+            android:name=".ui.activity.orderDetail.OrderDetailActivity"
+            android:label="@string/title_activity_order_detail" />
+        <activity
+            android:name=".ui.activity.foodsList.FoodsListActivity"
+            android:label="@string/title_activity_order_food" />
+        <activity
+            android:name=".ui.activity.config.id.ConfigIDActivity"
+            android:label="@string/title_activity_config" />
+        <activity
+            android:name=".ui.activity.config.ConfigActivity"
+            android:label="@string/title_activity_config_room" />
+        <activity
+            android:name=".ui.activity.config.room.ConfigRoomActivity"
+            android:label="@string/title_activity_config_room" />
+        <activity
+            android:name=".ui.activity.config.menu.MenuTypeActivity"
+            android:label="@string/title_activity_menu_type" />
+        <activity
+            android:name=".ui.activity.orderFood.OrderFoodActivity"
+            android:label="@string/title_activity_order"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.table.TableOperationActivity"
+            android:label="@string/title_activity_table_operation"
+            android:launchMode="standard" />
+        <activity
+            android:name=".ui.activity.bill.BillActivity"
+            android:label="@string/title_activity_bill"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.activity.home.HomeActivity"
+            android:label="@string/title_activity_home" />
+        <activity
+            android:name=".ui.activity.orderList.OrderListActivity"
+            android:label="@string/title_activity_order_list" />
+        <activity
+            android:name=".ui.activity.messageList.MessageListActivity"
+            android:label="@string/title_activity_message_list" />
+        <activity
+            android:name=".ui.activity.info.waimai.WaiMaiActivity"
+            android:label="@string/title_activity_wai_mai" />
+        <activity
+            android:name=".ui.activity.info.yuding.YuDingActivity"
+            android:label="@string/title_activity_yu_ding" />
+        <activity
+            android:name=".ui.activity.BigImageActivity"
+            android:label="@string/title_activity_big_image" />
+
+        <service android:name=".push.MyPushIntentService" />
+
+        <activity
+            android:name=".ui.activity.meal.MealActivity"
+            android:label="@string/title_activity_meal" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.boss.BossMainActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.my.MyActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.returnanalysis.ReturnAnalysisActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.salerank.SaleRankActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.bussiness.BussinessActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.desk.DeskBussinessActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.returncause.ReturnCauseActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.changeShopAddress.ChangeShopAddressActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.changeShopName.ChangeShopNameActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.changePassword.ChangePasswordActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.basicSets.BasicSetsActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.shopPermissionManage.ShopPermissionManageActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.edit.EditActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.foodmanager.FoodManagerActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.foodedit.FoodEditActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.print.PrintManagerActivity"
+            android:theme="@style/BossTheme" />
+        <activity android:name=".ui.activity.activityOfBoss.sale.SaleActivity" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.shopPermissionEdit.ShopPermissionEditActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name="me.iwf.photopicker.PhotoPickerActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name="me.iwf.photopicker.PhotoPagerActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.addPrint.AddPrintActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.saleEdit.SaleEditActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.weight.WeightActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.weightEdit.WeightEditActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.house.HouseActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.houseEdit.HouseEditActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.deskedit.DeskEditActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.deskmanager.DeskManagerActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.desktype.DeskTypeActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.desktypeedit.DeskTypeEditActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.foodbussiness.FoodBussinessActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.waiterbussiness.WaiterBussinessActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.paybussiness.PayBussinessActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.orderBussiness.OrderBussinessActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.returnbussiness.ReturnBussinessActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.detailbussiness.DetailBussinessActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.salebussiness.SaleBussinessActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.staffManager.StaffManageActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.memberManager.MemberManageActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.addStaff.AddStaffActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.guazhang.GuaZhangActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.guazhangedit.GuazhangEditActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.guazhangdetail.GuaZhangDetailActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.kouwei.KouweiActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.kouweiedit.KouweiEditActivity"
+            android:theme="@style/BossTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.season.SeasonActivity"
+            android:theme="@style/BossTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.seasonedit.SeasonEditActivity"
+            android:theme="@style/BossTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.shuxing.ShuxingActivity"
+            android:theme="@style/BossTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.shuxingedit.ShuxingEditActivity"
+            android:theme="@style/BossTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.MemberInfo.MemberInfoActivity"
+            android:theme="@style/BossTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.memberLevelManage.MemberLevelManageActivity"
+            android:theme="@style/BossTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.addMemberLevel.AddMemberLevelActivity"
+            android:theme="@style/BossTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.couponManage.CouponManageActivity"
+            android:theme="@style/BossTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.rechargeManage.RechargeManageActivity"
+            android:theme="@style/BossTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.rechargeManageEdit.RechargeManageEditActivity"
+            android:theme="@style/BossTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.addCoupon.AddCouponActivity"
+            android:theme="@style/BossTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.wechat.WechatActivity"
+            android:theme="@style/BossTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.coupondetail.CouPonDetailActivity"
+            android:theme="@style/BossTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".ui.activity.queue.QueueActivity" />
+        <activity android:name=".ui.activity.queueedit.QueueEditActivity" />
+        <activity android:name=".ui.activity.recharge.RechargeActivity" />
+        <activity android:name=".ui.activity.rechargeedit.RechargeEditActivity" />
+        <activity android:name=".ui.activity.rechargedetail.RechargeDetailActivity" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.shopcollection.ShopCollectionActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.returnstatistics.ReturnStatisticsActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.collectiondetail.CollectionDetailActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.jion.JionActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.jiondetail.JionDetailActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.free.FreeActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.freedetail.FreeDetailActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.deskopen.DeskOpenActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.salestatistics.SaleStatisticsActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.giftstatistics.GiftStatisticsActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.rechargeTranscation.RechargeTranscationActivity"
+            android:theme="@style/BossTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.rechargeDetail.RechargeDetailActivity"
+            android:theme="@style/BossTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.memberVolumeAnalysis.MemberVolumeAnalysisActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.memberconsumeDetails.MemberConsumeDetailActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.integralTransactionDetail.IntegralTransactionDetailActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.couponDetailTable.CouponDetailTableActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.rechargeTransactionItemDetail.RechargeTranscationItemDetailActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.integralTransactionItemDetail.IntegralTransactionItemDetailActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.orderManage.OrderManageActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.orderManageDetail.OrderManageDetailActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.sensitiveOpearation.SensitiveOpearationActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.saleStatisticsProduct.SaleStatisticsProductActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.sensitiveOpearationDetail.SensitiveDetailActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.mansong.MansongActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.mansongedit.MansongEditActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.couponLineDown.CouponLineDownActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.wxsetting.WXSettingActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.editCouponLineDown.EditCouponLineDownActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.mealManger.MealManagerActivity"
+            android:theme="@style/BossTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.mealEdit.MealEditActivity"
+            android:theme="@style/BossTheme" />
+
+        <activity
+            android:name=".ui.activity.activityOfBoss.collectionStatistics.CollectionStatisticsActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.mealTypemanager.MealTypeManagerActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.mealTypeEdit.MealTypeEditActivity"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.setFood.SetFoodActivity"
+            android:theme="@style/BossTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.deletefood.DeleteFoodActivity"
+            android:theme="@style/BossTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.bindfood.BindFoodActivity"
+            android:theme="@style/BossTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.activity.activityOfBoss.setOrLookFood.SetOrLookFoodActivity"
+            android:theme="@style/BossTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+    </application>
+
+</manifest>

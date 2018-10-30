@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/setting_bg"
+    android:orientation="vertical"
+    tools:context="com.admin.shopkeeper.ui.activity.activityOfBoss.returnanalysis.ReturnAnalysisActivity">
+
+    <include layout="@layout/boss_common_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <View
+                style="@style/LineHorStyle"
+                android:layout_marginTop="@dimen/_30sdp" />
+
+            <LinearLayout style="@style/SettingItemStyle">
+
+                <TextView
+                    style="@style/SettingItemTextStyle"
+                    android:text="充值名称" />
+
+                <EditText
+                    android:id="@+id/edit_recharge_name"
+                    style="@style/SettingItemEditStyle"
+                    android:hint="请设置充值方案名称" />
+
+            </LinearLayout>
+
+            <View style="@style/LineHor2Style" />
+
+            <LinearLayout style="@style/SettingItemStyle">
+
+                <TextView
+                    style="@style/SettingItemTextStyle"
+                    android:text="充值金额" />
+
+                <EditText
+                    android:id="@+id/edit_recharge_money"
+                    style="@style/SettingItemEditStyle"
+                    android:hint="请设置充值金额"
+                    android:inputType="textEmailAddress" />
+
+            </LinearLayout>
+
+            <View style="@style/LineHor2Style" />
+
+            <LinearLayout style="@style/SettingItemStyle">
+
+                <TextView
+                    style="@style/SettingItemTextStyle"
+                    android:text="赠送金额" />
+
+                <EditText
+                    android:id="@+id/edit_recharge_give_money"
+                    style="@style/SettingItemEditStyle"
+                    android:hint="请输入赠送金额"
+                    android:inputType="textEmailAddress" />
+
+            </LinearLayout>
+
+            <View style="@style/LineHor2Style" />
+
+            <LinearLayout style="@style/SettingItemStyle">
+
+                <TextView
+                    style="@style/SettingItemTextStyle"
+                    android:text="赠送方式" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="金额" />
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="积分" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

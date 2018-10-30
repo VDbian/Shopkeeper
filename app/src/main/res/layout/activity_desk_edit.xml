@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/setting_bg"
+    android:orientation="vertical"
+    tools:context="com.admin.shopkeeper.ui.activity.activityOfBoss.returnanalysis.ReturnAnalysisActivity">
+
+    <include layout="@layout/boss_common_toolbar" />
+
+    <View
+        style="@style/LineHorStyle"
+        android:layout_marginTop="@dimen/_30sdp" />
+
+    <LinearLayout style="@style/SettingItemStyle">
+
+        <TextView
+            style="@style/SettingItemTextStyle"
+            android:text="桌位名称" />
+
+        <EditText
+            android:id="@+id/edit_name"
+            style="@style/SettingItemEditStyle"
+            android:hint="请输入桌位名称" />
+
+    </LinearLayout>
+
+    <View style="@style/LineHor2Style" />
+
+    <LinearLayout style="@style/SettingItemStyle">
+
+        <TextView
+            style="@style/SettingItemTextStyle"
+            android:text="容纳人数" />
+
+        <EditText
+            android:id="@+id/edit_count"
+            style="@style/SettingItemEditStyle"
+            android:inputType="number"
+            android:hint="请输入容纳人数" />
+
+    </LinearLayout>
+
+    <View style="@style/LineHor2Style" />
+
+    <LinearLayout style="@style/SettingItemStyle">
+
+        <TextView
+            style="@style/SettingItemTextStyle"
+            android:text="序号" />
+
+        <EditText
+            android:id="@+id/edit_sortno"
+            style="@style/SettingItemEditStyle"
+            android:inputType="number"
+            android:hint="请输入序号" />
+
+    </LinearLayout>
+
+    <View style="@style/LineHor2Style" />
+
+    <LinearLayout style="@style/SettingItemStyle">
+
+        <TextView
+            style="@style/SettingItemTextStyle"
+            android:text="房间" />
+
+        <Spinner
+            android:id="@+id/edit_room"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_32sdp"
+            android:layout_marginRight="@dimen/_32sdp" />
+    </LinearLayout>
+
+    <View style="@style/LineHor2Style" />
+
+    <LinearLayout style="@style/SettingItemStyle">
+
+        <TextView
+            style="@style/SettingItemTextStyle"
+            android:text="人数范围" />
+
+        <Spinner
+            android:id="@+id/edit_people"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_32sdp"
+            android:layout_marginRight="@dimen/_32sdp" />
+    </LinearLayout>
+
+    <View style="@style/LineHor2Style" />
+
+    <LinearLayout style="@style/SettingItemStyle">
+
+        <TextView
+            style="@style/SettingItemTextStyle"
+            android:text="微信显示" />
+
+        <RadioGroup
+            android:id="@+id/edit_weixin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_32sdp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="是" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="否" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <View style="@style/LineHorStyle" />
+
+</LinearLayout>

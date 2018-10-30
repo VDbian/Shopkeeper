@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="@dimen/_600sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_dialog_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:text="权限减免"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_36ssp" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="@dimen/_400sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:layout_marginRight="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:hint="输入减免金额"
+            android:inputType="number"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_28ssp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/_40sdp"
+            android:paddingRight="@dimen/_40sdp">
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_blue"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="抹元"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_32ssp" />
+
+            <TextView
+                android:id="@+id/tv_2"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_blue"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="抹角"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_32ssp" />
+
+            <TextView
+                android:id="@+id/tv_3"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_blue"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="抹份"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_32ssp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_4"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_blue"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:text="四舍五入"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_32ssp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_56sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                style="@style/ButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="@dimen/_50sdp"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_dialog_btn"
+                android:text="取消"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_36ssp" />
+
+            <Button
+                android:id="@+id/OneBtn"
+                style="@style/ButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="@dimen/_50sdp"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_dialog_btn"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_36ssp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

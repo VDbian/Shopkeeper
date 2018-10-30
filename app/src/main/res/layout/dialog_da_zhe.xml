@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:layout_width="@dimen/_600sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_dialog_bg">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/titleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/_40sdp"
+                android:paddingRight="@dimen/_40sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_36ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/tipBtn"
+                app:layout_constraintEnd_toStartOf="@+id/tipBtn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tipBtn"
+                tools:text="红汤牛肉" />
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/tipBtn"
+                android:layout_width="@dimen/_96sdp"
+                android:layout_height="@dimen/_96sdp"
+                android:background="@null"
+                android:src="@mipmap/tip_close_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tipBtn" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/titleLayout"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:hint="打折(1-99)"
+            android:inputType="number"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingRight="@dimen/_20sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_28ssp" />
+
+       <!-- <android.support.v7.widget.AppCompatButton
+            android:id="@+id/OneBtn"
+            style="@style/ButtonStyle"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/editText"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/editText"
+            android:layout_marginRight="@dimen/_40sdp"
+            android:background="@drawable/selector_dialog_btn"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_30ssp"
+            tools:text="确定" />-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editText"
+            android:paddingLeft="@dimen/_40sdp"
+            android:paddingRight="@dimen/_40sdp" />
+        <LinearLayout
+            android:layout_below="@id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_56sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                style="@style/ButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="@dimen/_50sdp"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_dialog_btn"
+                android:text="取消"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_36ssp" />
+
+            <Button
+                android:id="@+id/OneBtn"
+                style="@style/ButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="@dimen/_50sdp"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_dialog_btn"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_36ssp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

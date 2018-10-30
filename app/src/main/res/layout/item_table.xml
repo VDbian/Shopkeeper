@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_190sdp"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardElevation="@dimen/_5sdp"
+    app:cardMaxElevation="@dimen/_5sdp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/item_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_table_open">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_table_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:includeFontPadding="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_30ssp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="ddd" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_table_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:textSize="@dimen/_20ssp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/radioButton"
+            app:layout_constraintTop_toTopOf="@+id/tv_table_id"
+            tools:text="ddd" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_table_extra"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:maxLines="2"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textColor="#28bbb2"
+            android:textSize="@dimen/_24ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="$ddd" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_table_time"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:background="#28bbb2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_24ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_table_extra"
+            tools:text="2h" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_table_status"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_22ssp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:button="@null"
+            android:checked="true"
+            android:drawableLeft="@drawable/selector_radio"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:visibility="gone"
+            android:paddingRight="@dimen/_8sdp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.v7.widget.CardView>

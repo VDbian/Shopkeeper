@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context="com.admin.shopkeeper.ui.fragment.desk.DeskFragment">
+
+    <com.ogaclejapan.smarttablayout.SmartTabLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/viewPagerTab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_96sdp"
+        app:stl_customTabTextLayoutId="@layout/custom_tab"
+        app:stl_customTabTextViewId="@id/custom_text"
+        app:stl_dividerColor="@android:color/transparent"
+        app:stl_indicatorColor="@color/colorAccent"
+        app:stl_indicatorCornerRadius="@dimen/_3sdp"
+        app:stl_indicatorInterpolation="smart"
+        app:stl_indicatorThickness="@dimen/_3sdp"
+        app:stl_underlineColor="@android:color/transparent" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/viewPagerTab"
+        android:background="#F6F6F6" />
+
+
+</RelativeLayout>

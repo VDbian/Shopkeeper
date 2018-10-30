@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_item"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/_16sdp"
+    android:paddingLeft="@dimen/_32sdp"
+    android:paddingRight="@dimen/_32sdp"
+    android:paddingTop="@dimen/_16sdp">
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_32sdp"
+        android:layout_weight="2"
+        android:gravity="center_vertical"
+        android:text="菜品"
+        android:textColor="#888888"
+        android:textSize="@dimen/_32ssp" />
+
+    <TextView
+        android:id="@+id/item_count"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/_30sdp"
+        android:text="类型"
+        android:textColor="#888888"
+        android:textSize="@dimen/_32ssp" />
+
+    <CheckBox
+        android:id="@+id/item_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

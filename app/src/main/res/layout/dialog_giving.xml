@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="@dimen/_600sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_dialog_bg"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_40sdp"
+                android:paddingRight="@dimen/_40sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_36ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/cancel"
+                app:layout_constraintEnd_toStartOf="@+id/cancel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cancel"
+                tools:text="赠送菜品" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:padding="6dp"
+                android:textColor="#CCCCCC"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="取消" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="5dp"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_40sdp"
+                android:paddingRight="@dimen/_40sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_24ssp"
+                tools:text="份数" />
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/reduce"
+                android:layout_width="@dimen/_76sdp"
+                android:layout_height="@dimen/_76sdp"
+                android:background="@drawable/selector_common"
+                android:src="@mipmap/num_reduce" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/numberText"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_28ssp" />
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/add"
+                android:layout_width="@dimen/_76sdp"
+                android:layout_height="@dimen/_76sdp"
+                android:background="@drawable/selector_common"
+                android:src="@mipmap/num_add" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/OneBtn"
+            style="@style/ButtonStyle"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/selector_dialog_btn"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_30ssp"
+            tools:text="确定" />
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/_16sdp"
+    android:paddingRight="@dimen/_16sdp"
+    android:paddingTop="@dimen/_16sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_160sdp"
+        android:background="@drawable/bg_queue"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/item_no"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_queque_left"
+            android:gravity="center"
+            android:text="A01"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_48ssp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_31sdp">
+
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="姓名：张菁" />
+
+            <TextView
+                android:id="@+id/item_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="姓名：张菁" />
+
+            <TextView
+                android:id="@+id/item_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="姓名：张菁" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/_32sdp"
+            android:src="@mipmap/list_icon_arrow_right" />
+
+    </LinearLayout>
+
+</FrameLayout>

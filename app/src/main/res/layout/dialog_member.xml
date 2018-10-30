@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="@dimen/_600sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_dialog_menber"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="@dimen/_20sdp"
+            android:text="标题"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_40ssp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_32sdp"
+            android:background="@drawable/bg_member"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_39sdp"
+            android:paddingLeft="@dimen/_33sdp"
+            android:paddingRight="@dimen/_33sdp"
+            android:paddingTop="@dimen/_39sdp">
+
+            <TextView
+                android:id="@+id/text_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="会员编码：17533333"
+                android:textColor="#333333"
+                android:textSize="@dimen/_26ssp" />
+
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="会员姓名：17533333"
+                android:textColor="#333333"
+                android:textSize="@dimen/_26ssp" />
+
+            <TextView
+                android:id="@+id/text_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="手机号码：17533333"
+                android:textColor="#333333"
+                android:textSize="@dimen/_26ssp" />
+
+            <TextView
+                android:id="@+id/text_remain_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="剩余积分：17533333"
+                android:textColor="#FF2D4B"
+                android:textSize="@dimen/_26ssp" />
+
+            <TextView
+                android:id="@+id/text_remain_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="会员余额：17533333"
+                android:textColor="#FF2D4B"
+                android:textSize="@dimen/_26ssp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_88sdp"
+            android:layout_marginTop="@dimen/_33sdp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:text="使用积分"
+                android:textColor="#000000"
+                android:textSize="@dimen/_34ssp" />
+
+            <EditText
+                android:id="@+id/edit_score"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_34sdp"
+                android:background="@color/transparent"
+                android:hint="请输入要使用的积分"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_32sdp"
+            android:layout_marginRight="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/dialog_ok"
+                style="@style/ButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="@dimen/_32sdp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_dialog_btn"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_30ssp" />
+
+            <Button
+                android:id="@+id/OneBtn"
+                style="@style/ButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/_32sdp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_dialog_btn"
+                android:text="取消"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_30ssp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

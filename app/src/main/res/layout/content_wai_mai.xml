@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.admin.shopkeeper.ui.activity.info.waimai.WaiMaiActivity"
+    tools:showIn="@layout/activity_wai_mai">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_88sdp"
+        android:background="@drawable/selector_common"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_30sdp"
+        android:paddingRight="@dimen/_30sdp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="姓名"
+            android:textColor="#000000"
+            android:textSize="@dimen/_32ssp" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/waimai_username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="请输入收货人姓名"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="#999999"
+            android:textColorHint="#999999"
+            android:textSize="@dimen/_34ssp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_1sdp"
+        android:background="#DFDFDF" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_88sdp"
+        android:background="@drawable/selector_common"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_30sdp"
+        android:paddingRight="@dimen/_30sdp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="电话"
+            android:textColor="#000000"
+            android:textSize="@dimen/_32ssp" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/waimai_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="请输入收货人电话"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="#999999"
+            android:textColorHint="#999999"
+            android:textSize="@dimen/_34ssp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_1sdp"
+        android:background="#DFDFDF" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_88sdp"
+        android:background="@drawable/selector_common"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_30sdp"
+        android:paddingRight="@dimen/_30sdp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="地址"
+            android:textColor="#000000"
+            android:textSize="@dimen/_32ssp" />
+
+        <android.support.v7.widget.AppCompatEditText
+
+            android:id="@+id/waimai_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="请输入收货人地址"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="#999999"
+            android:textColorHint="#999999"
+            android:textSize="@dimen/_34ssp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_1sdp"
+        android:background="#DFDFDF" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_88sdp"
+        android:background="@drawable/selector_common"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_30sdp"
+        android:paddingRight="@dimen/_30sdp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="配送日期"
+            android:textColor="#000000"
+            android:textSize="@dimen/_32ssp" />
+
+        <android.support.v7.widget.AppCompatTextView
+
+            android:id="@+id/waimai_date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:hint="请选择配送日期"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="#999999"
+            android:textColorHint="#999999"
+            android:textSize="@dimen/_34ssp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_1sdp"
+        android:background="#DFDFDF" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_88sdp"
+        android:background="@drawable/selector_common"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_30sdp"
+        android:paddingRight="@dimen/_30sdp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="配送时间"
+            android:textColor="#000000"
+            android:textSize="@dimen/_32ssp" />
+
+        <android.support.v7.widget.AppCompatTextView
+
+            android:id="@+id/waimai_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:hint="请选择配送时间"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="#999999"
+            android:textColorHint="#999999"
+            android:textSize="@dimen/_34ssp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_1sdp"
+        android:background="#DFDFDF" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_88sdp"
+        android:background="@drawable/selector_common"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_30sdp"
+        android:paddingRight="@dimen/_30sdp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="备注"
+            android:textColor="#000000"
+            android:textSize="@dimen/_32ssp" />
+
+        <android.support.v7.widget.AppCompatEditText
+
+            android:id="@+id/waimai_remark"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入备注"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="#999999"
+            android:textColorHint="#999999"
+            android:textSize="@dimen/_34ssp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_1sdp"
+        android:background="#DFDFDF" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/waimai_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_88sdp"
+        android:layout_margin="@dimen/_80sdp"
+        android:background="@drawable/selector_dialog_btn"
+        android:text="确定"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_36ssp" />
+
+
+</LinearLayout>

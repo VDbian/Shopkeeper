@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.admin.shopkeeper.weight.DropDownMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dropDownMenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:dddividerColor="@color/gray"
+    app:ddmaskColor="@color/mask_color"
+    app:ddmenuBackgroundColor="@color/white"
+    app:ddmenuMenuHeightPercent="0.5"
+    app:ddmenuSelectedIcon="@mipmap/arrow_up_filled_color"
+    app:ddmenuTextSize="@dimen/_30ssp"
+    app:ddmenuUnselectedIcon="@mipmap/arrow_down_filled"
+    app:ddtextSelectedColor="@color/drop_down_selected"
+    app:ddtextUnselectedColor="@color/drop_down_unselected"
+    app:ddunderlineColor="@color/gray"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.admin.shopkeeper.ui.activity.orderList.OrderListActivity"
+    tools:showIn="@layout/activity_order_list">
+
+
+</com.admin.shopkeeper.weight.DropDownMenu>

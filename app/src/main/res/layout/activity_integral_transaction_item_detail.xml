@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/setting_bg"
+    android:orientation="vertical"
+    tools:context="com.admin.shopkeeper.ui.activity.activityOfBoss.returnanalysis.ReturnAnalysisActivity">
+
+    <include layout="@layout/boss_common_toolbar" />
+
+
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="@dimen/_30sdp"
+         android:background="@color/white"
+         android:orientation="vertical">
+
+         <View style="@style/LineHorStyle" />
+
+         <FrameLayout
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/_80sdp"
+             android:paddingLeft="@dimen/_30sdp"
+             android:paddingRight="@dimen/_30sdp">
+
+             <TextView
+                 android:id="@+id/item_shop_name"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:text="东家二掌柜"
+                 android:textColor="#333333"
+                 android:textSize="@dimen/_30ssp" />
+
+             <TextView
+                 android:id="@+id/item_date"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="right|center_vertical"
+                 android:visibility="invisible"
+                 android:text="2017-09-22" />
+
+         </FrameLayout>
+
+         <View
+             style="@style/LineHorStyle"
+             android:layout_marginLeft="@dimen/_30sdp"
+             android:layout_marginRight="@dimen/_30sdp" />
+         <FrameLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="@dimen/_15sdp"
+             android:paddingLeft="@dimen/_30sdp"
+             android:paddingRight="@dimen/_30sdp">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:text="姓名" />
+
+             <TextView
+                 android:id="@+id/item_username"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="right|center_vertical"
+                 android:text="东家二掌柜" />
+
+         </FrameLayout>
+         <FrameLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="@dimen/_15sdp"
+             android:paddingLeft="@dimen/_30sdp"
+             android:paddingRight="@dimen/_30sdp">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:text="手机号" />
+
+             <TextView
+                 android:id="@+id/item_phone"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="right|center_vertical"
+                 android:text="东家二掌柜" />
+
+         </FrameLayout>
+         <FrameLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="@dimen/_15sdp"
+         android:paddingLeft="@dimen/_30sdp"
+         android:paddingRight="@dimen/_30sdp">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical"
+             android:text="累积充值" />
+
+         <TextView
+             android:id="@+id/item_cumulative_recharge"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="right|center_vertical"
+             android:text="东家二掌柜" />
+
+     </FrameLayout>
+
+         <FrameLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="@dimen/_15sdp"
+             android:paddingLeft="@dimen/_30sdp"
+             android:paddingRight="@dimen/_30sdp">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:text="累积消费" />
+
+             <TextView
+                 android:id="@+id/item_cumulative_consume"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="right|center_vertical"
+                 android:text="东家二掌柜" />
+
+         </FrameLayout>
+
+         <FrameLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="@dimen/_15sdp"
+             android:paddingLeft="@dimen/_30sdp"
+             android:paddingRight="@dimen/_30sdp">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:text="消费金额" />
+
+             <TextView
+                 android:id="@+id/item_consume_money"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="right|center_vertical"
+                 android:text="东家二掌柜" />
+
+         </FrameLayout>
+
+         <FrameLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="@dimen/_15sdp"
+             android:paddingLeft="@dimen/_30sdp"
+             android:paddingRight="@dimen/_30sdp">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:text="充值金额" />
+
+             <TextView
+                 android:id="@+id/item_recharge_money"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="right|center_vertical"
+                 android:text="东家二掌柜" />
+
+         </FrameLayout>
+
+         <FrameLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="@dimen/_15sdp"
+             android:paddingLeft="@dimen/_30sdp"
+             android:paddingRight="@dimen/_30sdp">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:text="余额" />
+
+             <TextView
+                 android:id="@+id/item_yue"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="right|center_vertical"
+                 android:text="东家二掌柜" />
+
+         </FrameLayout>
+
+         <View
+             style="@style/LineHorStyle"
+             android:layout_marginTop="@dimen/_15sdp" />
+
+     </LinearLayout>
+
+
+     <View
+         style="@style/LineHorStyle"
+         android:layout_marginTop="@dimen/_30sdp" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="消费方式"
+            android:textColor="#333333" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="数量"
+            android:textColor="#333333" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="日期"
+            android:textColor="#333333" />
+    </LinearLayout>
+
+    <View style="@style/LineHorStyle" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

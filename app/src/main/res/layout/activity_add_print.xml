@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/setting_bg"
+    android:orientation="vertical"
+    tools:context="com.admin.shopkeeper.ui.activity.activityOfBoss.returnanalysis.ReturnAnalysisActivity">
+
+    <include layout="@layout/boss_common_toolbar" />
+
+    <View
+        style="@style/LineHorStyle"
+        android:layout_marginTop="@dimen/_30sdp" />
+
+    <LinearLayout style="@style/SettingItemStyle">
+
+        <TextView
+            style="@style/SettingItemTextStyle"
+            android:text="打印机名称" />
+
+        <EditText
+            android:id="@+id/print_name"
+            style="@style/SettingItemEditStyle"
+            android:hint="请输入打印机名称" />
+
+    </LinearLayout>
+
+    <View style="@style/LineHor2Style" />
+
+    <LinearLayout style="@style/SettingItemStyle">
+
+        <TextView
+            style="@style/SettingItemTextStyle"
+            android:text="打印机地址" />
+
+        <EditText
+            android:id="@+id/print_address"
+            style="@style/SettingItemEditStyle"
+            android:inputType="textEmailAddress"
+            android:hint="请输入打印机地址" />
+
+    </LinearLayout>
+
+    <View style="@style/LineHor2Style" />
+
+    <LinearLayout style="@style/SettingItemStyle">
+
+        <TextView
+            style="@style/SettingItemTextStyle"
+            android:text="打印机端口" />
+
+        <EditText
+            android:id="@+id/print_port"
+            style="@style/SettingItemEditStyle"
+            android:inputType="number"
+            android:hint="请输入打印机端口" />
+
+    </LinearLayout>
+
+    <View style="@style/LineHor2Style" />
+
+    <LinearLayout style="@style/SettingItemStyle">
+
+        <TextView
+            style="@style/SettingItemTextStyle"
+            android:text="打印机类型" />
+
+        <Spinner
+            android:id="@+id/edit_printtype"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_32sdp"
+            android:layout_marginRight="@dimen/_32sdp" />
+
+    </LinearLayout>
+
+    <View style="@style/LineHor2Style" />
+
+    <LinearLayout style="@style/SettingItemStyle">
+
+        <TextView
+            style="@style/SettingItemTextStyle"
+            android:text="是否切刀" />
+
+        <RadioGroup
+            android:id="@+id/edit_qiedao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_32sdp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="是" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="否" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+    <View style="@style/LineHor2Style" />
+    <LinearLayout style="@style/SettingItemStyle">
+
+        <TextView
+            style="@style/SettingItemTextStyle"
+            android:text="打印机属性" />
+
+        <Spinner
+            android:id="@+id/edit_types"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_32sdp"
+            android:layout_marginRight="@dimen/_32sdp" />
+
+    </LinearLayout>
+    <View style="@style/LineHor2Style" />
+    <LinearLayout style="@style/SettingItemStyle">
+
+        <TextView
+            style="@style/SettingItemTextStyle"
+            android:text="是否全切" />
+
+        <RadioGroup
+            android:id="@+id/edit_cuttype"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_32sdp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="是" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="否" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+    <View style="@style/LineHor2Style" />
+    <LinearLayout style="@style/SettingItemStyle">
+
+        <TextView
+            style="@style/SettingItemTextStyle"
+            android:text="打印机规格" />
+
+        <RadioGroup
+            android:id="@+id/edit_guige"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_32sdp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="58mm" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="80mm" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+    <View style="@style/LineHor2Style" />
+    <LinearLayout style="@style/SettingItemStyle">
+
+        <TextView
+            style="@style/SettingItemTextStyle"
+            android:text="打印机方式" />
+
+        <Spinner
+            android:id="@+id/print_way"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_32sdp"
+            android:layout_marginRight="@dimen/_32sdp" />
+
+    </LinearLayout>
+
+</LinearLayout>

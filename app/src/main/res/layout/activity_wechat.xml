@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/setting_bg"
+    android:orientation="vertical"
+    tools:context="com.admin.shopkeeper.ui.activity.activityOfBoss.returnanalysis.ReturnAnalysisActivity">
+
+    <include layout="@layout/boss_common_toolbar" />
+
+    <View
+        style="@style/LineHorStyle"
+        android:layout_marginTop="@dimen/_32sdp" />
+
+    <LinearLayout style="@style/SettingItemStyle">
+
+        <TextView
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/_30sdp"
+            android:text="扫码点餐是否支付"
+            android:textColor="#333333"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/_32ssp" />
+
+        <RadioGroup
+            android:id="@+id/item_qrcode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="是" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="否" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <View style="@style/LineHor2Style" />
+
+    <LinearLayout style="@style/SettingItemStyle">
+
+        <TextView
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/_30sdp"
+            android:text="微信预定预付比例"
+            android:textColor="#333333"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/_32ssp" />
+
+        <EditText
+            android:id="@+id/item_rate"
+            style="@style/SettingItemEditStyle"
+            android:inputType="numberDecimal"
+            android:hint="请输入满送规则名称" />
+
+    </LinearLayout>
+
+    <View style="@style/LineHor2Style" />
+
+    <LinearLayout style="@style/SettingItemStyle">
+
+        <TextView
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/_30sdp"
+            android:text="微信功能"
+            android:textColor="#333333"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/_32ssp" />
+
+        <TextView
+            android:id="@+id/text_weixin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:drawablePadding="@dimen/_21sdp"
+            android:drawableRight="@mipmap/list_icon_arrow_right"
+            android:gravity="right"
+            android:textColor="@color/text_grey" />
+
+    </LinearLayout>
+
+    <View style="@style/LineHor2Style" />
+
+    <LinearLayout style="@style/SettingItemStyle">
+
+        <TextView
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/_30sdp"
+            android:text="微信提前预定天数"
+            android:textColor="#333333"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/_32ssp" />
+
+        <TextView
+            android:id="@+id/text_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:drawablePadding="@dimen/_21sdp"
+            android:drawableRight="@mipmap/list_icon_arrow_right"
+            android:gravity="right"
+            android:textColor="@color/text_grey" />
+
+    </LinearLayout>
+
+    <View style="@style/LineHor2Style" />
+
+    <LinearLayout style="@style/SettingItemStyle">
+
+        <TextView
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/_30sdp"
+            android:text="预定类型"
+            android:textColor="#333333"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/_32ssp" />
+
+        <TextView
+            android:id="@+id/text_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:drawablePadding="@dimen/_21sdp"
+            android:drawableRight="@mipmap/list_icon_arrow_right"
+            android:gravity="right"
+            android:textColor="@color/text_grey" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/LineHorStyle"
+        android:layout_marginTop="@dimen/_32sdp" />
+
+    <LinearLayout
+        android:id="@+id/ll_yuding"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp"
+        android:background="@drawable/selector_item"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:text="微信预定"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_32ssp" />
+
+        <TextView
+            android:id="@+id/text_yuding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:drawablePadding="@dimen/_21sdp"
+            android:drawableRight="@mipmap/list_icon_arrow_right"
+            android:gravity="right"
+            android:text="积分兑换"
+            android:textColor="@color/text_grey" />
+    </LinearLayout>
+
+    <View style="@style/LineHor2Style" />
+
+    <LinearLayout
+        android:id="@+id/ll_waimai"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp"
+        android:background="@drawable/selector_item"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:text="外卖"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_32ssp" />
+
+        <TextView
+            android:id="@+id/text_waimai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:drawablePadding="@dimen/_21sdp"
+            android:drawableRight="@mipmap/list_icon_arrow_right"
+            android:gravity="right"
+            android:text="积分兑换"
+            android:textColor="@color/text_grey" />
+    </LinearLayout>
+
+    <View style="@style/LineHor2Style" />
+
+    <LinearLayout
+        android:id="@+id/ll_kuaican"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp"
+        android:background="@drawable/selector_item"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:text="快餐"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_32ssp" />
+
+        <TextView
+            android:id="@+id/text_kuaican"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:drawablePadding="@dimen/_21sdp"
+            android:drawableRight="@mipmap/list_icon_arrow_right"
+            android:gravity="right"
+            android:text="积分兑换"
+            android:textColor="@color/text_grey" />
+    </LinearLayout>
+
+    <View style="@style/LineHor2Style" />
+
+    <LinearLayout
+        android:id="@+id/ll_saoma"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp"
+        android:background="@drawable/selector_item"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:text="扫码点餐"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_32ssp" />
+
+        <TextView
+            android:id="@+id/text_saoma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:drawablePadding="@dimen/_21sdp"
+            android:drawableRight="@mipmap/list_icon_arrow_right"
+            android:gravity="right"
+            android:text="积分兑换"
+            android:textColor="@color/text_grey" />
+    </LinearLayout>
+
+    <View style="@style/LineHorStyle" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_88sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:background="@drawable/btn_blue"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_36ssp" />
+
+
+</LinearLayout>

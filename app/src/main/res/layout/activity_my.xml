@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/setting_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/boss_common_toolbar" />
+
+
+    <LinearLayout
+        android:id="@+id/set_rl_setting"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/_30sdp"
+        android:paddingRight="@dimen/_30sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="账号"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/account_tv_my"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:text="1345234344" />
+    </LinearLayout>
+
+    <View style="@style/LineHorStyle" />
+
+    <LinearLayout
+        android:id="@+id/change_shop_name_rl_my"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp"
+        android:background="@drawable/selector_item"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_30sdp"
+        android:paddingRight="@dimen/_30sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="商家名称"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/shop_name_tv_my"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_24sdp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:text="智慧餐厅"
+            android:textColor="@color/grey_tv_my" />
+
+        <ImageView
+            android:id="@+id/store_name_iv_my"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/list_icon_arrow_right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/_31sdp"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/white" />
+
+    <RelativeLayout
+        android:id="@+id/change_shop_address_rl_my"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp"
+        android:background="@drawable/selector_item"
+        android:paddingLeft="@dimen/_30sdp"
+        android:paddingRight="@dimen/_30sdp">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_34sdp"
+            android:layout_marginRight="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_28sdp"
+            android:text="商家地址"
+            android:textColor="@color/black" />
+
+
+        <TextView
+            android:id="@+id/shop_address_tv_my"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_34sdp"
+            android:layout_centerVertical="true"
+            android:drawablePadding="@dimen/_24sdp"
+            android:drawableRight="@mipmap/list_icon_arrow_right"
+            android:gravity="end"
+            android:singleLine="true"
+            android:text="四川省成都市高新区天府3sss"
+            android:textColor="@color/grey_tv_my" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="@dimen/_31sdp"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/white" />
+
+    <RelativeLayout
+        android:id="@+id/change_pwd_rl_my"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@drawable/selector_item">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_34sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_28sdp"
+            android:text="修改登录密码"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:src="@mipmap/list_icon_arrow_right" />
+    </RelativeLayout>
+</LinearLayout>

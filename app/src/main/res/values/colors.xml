@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff2d4b</color>
+    <color name="colorPrimaryDark">#f06142</color>
+    <color name="colorAccent">#ff2d4b</color>
+
+    <color name="bosscolorPrimary">#4BAE4F</color>
+    <color name="bosscolorPrimaryDark">#378D3B</color>
+    <color name="bosscolorAccent">#4BAE4F</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorPress">#dddddd</color>
+    <color name="colorGray">#F3F3F3</color>
+    <color name="colorDialogBtn">#ff2d4b</color>
+    <color name="colorDialogBtnStroke">#f8082b</color>
+    <color name="colorDialogScanBtn">#FFAE4BA1</color>
+    <color name="colorFood">#ff6c81</color>
+
+    <color name="white">#ffffff</color>
+    <color name="gray">#dddddd</color>
+    <color name="black">#000000</color>
+    <color name="queryBg">#30000000</color>
+
+    <color name="drop_down_selected">#FB0E3B</color>
+    <color name="drop_down_unselected">#353535</color>
+
+    <color name="mask_color">#88888888</color>
+    <color name="check_bg">#f2f2f2</color>
+    <color name="un_press_color">#9C27B0</color>
+
+    <color name="orderStatusConfirm">#27ae60</color>
+    <color name="orderStatusWait">#f06142</color>
+    <color name="orderStatusCancel">#7f8c8d</color>
+
+    <color name="orderStatusNormal_1">#d98880</color>
+    <color name="orderStatusNormal_2">#7fb3d5</color>
+    <color name="orderStatusNormal_0">#bdc3c7</color>
+
+    <color name="orderStatusUnNormal_1">#c0392b</color>
+    <color name="orderStatusUnNormal_2">#2980b9</color>
+    <color name="orderStatusUnNormal_0">#7f8d8c</color>
+
+
+    <color name="navbar_selected">#528ef1</color>
+    <color name="navbar_normal">#7f8389</color>
+
+    <color name="bg_color">#efeff4</color>
+    <color name="item_line_color">#e5e5e5</color>
+
+    <!--设置-->
+    <color name="setting_bg">#f4f4f4</color>
+    <color name="setting_username_tv">#aaaaaa</color>
+
+    <color name="grey_tv_my">#999999</color>
+
+    <color name="text_black">#333333</color>
+    <color name="text_red">#e64340</color>
+    <color name="text_grey">#888888</color>
+    <color name="grey_dark">#565656</color>
+
+    <color name="navbar_selected_two">#4BAE4F</color>
+</resources>

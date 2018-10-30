@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/setting_bg"
+    android:orientation="vertical"
+    tools:context="com.admin.shopkeeper.ui.activity.activityOfBoss.returnanalysis.ReturnAnalysisActivity">
+
+    <include layout="@layout/boss_common_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <View
+                style="@style/LineHorStyle"
+                android:layout_marginTop="@dimen/_30sdp" />
+
+            <LinearLayout style="@style/SettingItemStyle">
+
+                <TextView
+                    style="@style/SettingItemTextStyle"
+                    android:text="套餐名称" />
+
+                <EditText
+                    android:id="@+id/edit_name"
+                    style="@style/SettingItemEditStyle"
+                    android:hint="请输入套餐名称" />
+
+            </LinearLayout>
+
+            <View style="@style/LineHor2Style" />
+
+            <LinearLayout style="@style/SettingItemStyle">
+
+                <TextView
+                    style="@style/SettingItemTextStyle"
+                    android:text="套餐价格" />
+
+                <EditText
+                    android:id="@+id/edit_price"
+                    style="@style/SettingItemEditStyle"
+                    android:hint="请输入套餐价格" />
+
+            </LinearLayout>
+
+            <View style="@style/LineHor2Style" />
+
+            <LinearLayout style="@style/SettingItemStyle">
+
+                <TextView
+                    style="@style/SettingItemTextStyle"
+                    android:text="套餐会员价格" />
+
+                <EditText
+                    android:id="@+id/edit_merberprice"
+                    style="@style/SettingItemEditStyle"
+                    android:hint="请输入套餐会员价格" />
+
+            </LinearLayout>
+
+            <View style="@style/LineHor2Style" />
+
+
+            <LinearLayout style="@style/SettingItemStyle">
+
+                <TextView
+                    style="@style/SettingItemTextStyle"
+                    android:text="套餐类别" />
+
+                <Spinner
+                    android:id="@+id/edit_mealtype"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_32sdp"
+                    android:layout_marginRight="@dimen/_32sdp" />
+
+            </LinearLayout>
+
+            <View style="@style/LineHor2Style" />
+
+            <LinearLayout style="@style/SettingItemStyle">
+
+                <TextView
+                    style="@style/SettingItemTextStyle"
+                    android:text="商品图片" />
+
+                <Button
+                    android:id="@+id/edit_selectImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_32sdp"
+                    android:layout_marginRight="@dimen/_32sdp"
+                    android:text="选择商品图片" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/edit_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_350sdp"
+                android:layout_marginLeft="@dimen/_210sdp"
+                android:layout_marginRight="@dimen/_32sdp"
+                android:visibility="gone" />
+
+            <View style="@style/LineHor2Style" />
+
+            <LinearLayout style="@style/SettingItemStyle">
+
+                <TextView
+                    style="@style/SettingItemTextStyle"
+                    android:text="强制打折" />
+
+                <RadioGroup
+                    android:id="@+id/edit_dazhe"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_32sdp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="不打折" />
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="打折" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <View style="@style/LineHor2Style" />
+
+            <LinearLayout style="@style/SettingItemStyle">
+
+                <TextView
+                    style="@style/SettingItemTextStyle"
+                    android:text="前台显示" />
+
+                <RadioGroup
+                    android:id="@+id/edit_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_32sdp"
+                    android:layout_marginRight="@dimen/_32sdp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="不显示"
+                         />
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="显示"
+                         />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <View style="@style/LineHor2Style" />
+
+            <LinearLayout style="@style/SettingItemStyle">
+
+                <TextView
+                    style="@style/SettingItemTextStyle"
+                    android:text="备注" />
+
+                <EditText
+                    android:id="@+id/edit_remark"
+                    style="@style/SettingItemEditStyle"
+                    android:hint="请输入备注" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/LineHorStyle"
+                android:layout_marginBottom="@dimen/_30sdp" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

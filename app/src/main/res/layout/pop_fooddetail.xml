@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="true"
+    android:orientation="vertical"
+    android:fitsSystemWindows="false">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:paddingLeft="@dimen/_30sdp"
+                android:text="菜品"
+                android:textColor="#7f8c89"
+                android:textSize="@dimen/_26ssp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/describe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:paddingLeft="@dimen/_30sdp"
+                android:text=""
+                android:textColor="#7f8c89"
+                android:textSize="@dimen/_20ssp" />
+
+        </RelativeLayout>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/number"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/_30sdp"
+            android:text="数量/重量"
+            android:textColor="#7f8c89"
+            android:textSize="@dimen/_26ssp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/_30sdp"
+            android:text="单价"
+            android:textColor="#7f8c89"
+            android:textSize="@dimen/_26ssp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/vipPrice"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/_30sdp"
+            android:text="价格"
+            android:textColor="#7f8c89"
+            android:textSize="@dimen/_26ssp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/etSale"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="折扣"
+            android:paddingLeft="@dimen/_30sdp"
+            android:textColor="#7f8c89"
+            android:textSize="@dimen/_26ssp" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_600sdp"
+        android:background="@color/white">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/pop_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </ScrollView>
+
+</LinearLayout>

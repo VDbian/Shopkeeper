@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group>
+        <item
+            android:id="@+id/nav_home"
+            android:checked="true"
+            android:icon="@mipmap/setting_icon_home"
+            android:title="主页" />
+        <item
+
+            android:id="@+id/nav_room"
+            android:icon="@mipmap/setting_icon_house"
+            android:title="房间刷新" />
+        <item
+
+            android:id="@+id/nav_foods"
+            android:icon="@mipmap/setting_icon_menurefresh"
+            android:title="菜品刷新" />
+
+        <!--<item-->
+        <!--android:id="@+id/nav_meal"-->
+        <!--android:icon="@drawable/ic_menu_slideshow"-->
+        <!--android:title="刷新套餐" />-->
+
+    </group>
+
+
+    <item android:title="其他">
+        <menu>
+            <item
+                android:id="@+id/nav_id"
+                android:icon="@mipmap/setting_icon_computer"
+                android:title="设置主机" />
+
+            <item
+                android:id="@+id/nav_cancel"
+                android:icon="@mipmap/setting_icon_computer"
+                android:title="取消主机" />
+
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@mipmap/setting_icon_loginout"
+                android:title="退出系统" />
+
+        </menu>
+    </item>
+
+</menu>

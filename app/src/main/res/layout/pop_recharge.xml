@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/setting_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pop_recharge"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:background="@drawable/selector_item"
+            android:gravity="center"
+            android:text="自定义金额充值"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_36ssp" />
+
+        <View style="@style/LineHorStyle" />
+
+        <TextView
+            android:id="@+id/pop_recharge_product"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:background="@drawable/selector_item"
+            android:gravity="center"
+            android:text="产品充值"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_36ssp" />
+
+        <TextView
+            android:id="@+id/pop_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@drawable/selector_item"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_36ssp" />
+    </LinearLayout>
+
+</RelativeLayout>

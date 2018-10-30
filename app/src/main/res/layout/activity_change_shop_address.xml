@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/setting_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/boss_common_toolbar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_38sdp"
+        android:textSize="@dimen/_27ssp"
+        android:text="商家地址"
+        android:textColor="@color/mask_color" />
+
+    <EditText
+        android:id="@+id/change_shop_address_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@color/white"
+        android:padding="@dimen/_30sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_32ssp"
+        android:textColorHint="@color/black"
+        android:hint="智慧餐厅" />
+</LinearLayout>

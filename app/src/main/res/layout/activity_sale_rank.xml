@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/setting_bg"
+    android:orientation="vertical"
+    tools:context="com.admin.shopkeeper.ui.activity.activityOfBoss.returnanalysis.ReturnAnalysisActivity">
+
+    <include layout="@layout/boss_common_toolbar" />
+
+
+    <View
+        style="@style/LineHorStyle"
+        android:layout_marginTop="@dimen/_30sdp" />
+
+    <!--退菜汇总-->
+    <LinearLayout
+        android:id="@+id/sale_hot"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp"
+        android:background="@drawable/selector_item"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_58sdp"
+            android:layout_height="@dimen/_58sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:src="@mipmap/sale_icon_hot" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_21sdp"
+            android:layout_weight="1"
+            android:text="热销菜品前十"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:src="@mipmap/list_icon_arrow_right" />
+    </LinearLayout>
+
+    <View style="@style/LineHor2Style" />
+
+    <!--退菜明细-->
+    <LinearLayout
+        android:id="@+id/sale_low"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp"
+        android:background="@drawable/selector_item"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_58sdp"
+            android:layout_height="@dimen/_58sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:src="@mipmap/sale_icon_low" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_21sdp"
+            android:layout_weight="1"
+            android:text="滞销菜品前二十"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:src="@mipmap/list_icon_arrow_right" />
+    </LinearLayout>
+
+    <View style="@style/LineHorStyle" />
+
+
+</LinearLayout>

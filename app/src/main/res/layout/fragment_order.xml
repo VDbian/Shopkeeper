@@ -1,0 +1,126 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.admin.shopkeeper.ui.fragment.order.OrderFragment">
+
+
+    <com.admin.shopkeeper.weight.DropDownMenu
+        android:id="@+id/dropDownMenu"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:ddmenuTextSize="@dimen/_30ssp"
+        app:ddtextUnselectedColor="@color/drop_down_unselected"
+        app:ddtextSelectedColor="@color/drop_down_selected"
+        app:dddividerColor="@color/gray"
+        app:ddunderlineColor="@color/gray"
+        app:ddmenuMenuHeightPercent="0.5"
+        app:ddmenuSelectedIcon="@mipmap/arrow_up_filled_color"
+        app:ddmaskColor="@color/mask_color"
+        app:ddmenuBackgroundColor="@color/white"
+        app:ddmenuUnselectedIcon="@mipmap/arrow_down_filled"
+        />
+
+   <!-- <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_28sdp"
+            android:layout_marginStart="@dimen/_28sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="订单状态"
+                android:textColor="#353535"
+                android:textSize="@dimen/_30ssp" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:src="@mipmap/arrow_down_filled" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_56sdp"
+            android:layout_marginStart="@dimen/_56sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintLeft_toRightOf="@+id/status"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="订单状态"
+                android:textColor="#353535"
+                android:textSize="@dimen/_30ssp" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:src="@mipmap/arrow_down_filled" />
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.AppCompatImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+
+            android:paddingLeft="@dimen/_28sdp"
+            android:paddingRight="@dimen/_28sdp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/order_search"
+            tools:layout_editor_absoluteX="316dp" />
+    </android.support.constraint.ConstraintLayout>-->
+
+
+    <!--<android.support.v7.widget.SearchView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+
+
+        app:submitBackground="@color/colorAccent"
+        app:measureWithLargestChild="false"
+        android:imeOptions="actionSearch"
+        app:defaultQueryHint="搜索"
+
+
+        app:searchHintIcon="@mipmap/order_search"
+
+        app:searchIcon="@mipmap/order_search" />-->
+
+</FrameLayout>

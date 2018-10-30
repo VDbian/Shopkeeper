@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.admin.shopkeeper.ui.activity.activityOfBoss.returnanalysis.ReturnAnalysisActivity">
+
+    <include layout="@layout/boss_common_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_today"
+            style="@style/DateTextStyle"
+            android:text="今日" />
+
+        <TextView
+            android:id="@+id/tv_week"
+            style="@style/DateTextStyle"
+            android:text="本周" />
+
+        <TextView
+            android:id="@+id/tv_month"
+            style="@style/DateTextStyle"
+            android:text="本月" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:gravity="right"
+            android:text="2018.3.18\n~2018.3.18"
+            android:textSize="@dimen/_20ssp" />
+
+    </LinearLayout>
+
+    <com.kelin.scrollablepanel.library.ScrollablePanel
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

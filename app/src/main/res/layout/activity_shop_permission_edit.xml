@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/boss_common_toolbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/setting_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_86sdp"
+                android:paddingBottom="@dimen/_17sdp"
+                android:paddingLeft="@dimen/_30sdp"
+                android:paddingTop="@dimen/_27sdp"
+                android:text="结账"
+                android:textSize="@dimen/_27ssp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView1"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_86sdp"
+                android:paddingBottom="@dimen/_17sdp"
+                android:paddingLeft="@dimen/_30sdp"
+                android:paddingTop="@dimen/_27sdp"
+                android:text="开单"
+                android:textSize="@dimen/_27ssp"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_86sdp"
+                android:paddingBottom="@dimen/_17sdp"
+                android:paddingLeft="@dimen/_30sdp"
+                android:paddingTop="@dimen/_27sdp"
+                android:text="结账"
+                android:textSize="@dimen/_27ssp"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/setting_bg"
+             android:orientation="vertical"
+             >
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/_86sdp"
+                 android:paddingBottom="@dimen/_17sdp"
+                 android:paddingLeft="@dimen/_30sdp"
+                 android:paddingTop="@dimen/_27sdp"
+                 android:text="结账"
+                 android:textSize="@dimen/_27ssp"
+                 />
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/_90sdp"
+                 android:background="@drawable/selector_item"
+                 android:orientation="horizontal">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:layout_marginLeft="@dimen/_30sdp"
+                     android:text="确认结账"
+                     android:textColor="@color/black"
+                     android:textSize="@dimen/_32ssp" />
+
+                 <TextView
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:layout_marginLeft="@dimen/_21sdp"
+                     android:layout_weight="1"
+                     android:textColor="@color/black" />
+
+                 <android.support.v7.widget.AppCompatCheckBox
+                     android:id="@+id/querenjiezhang"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:layout_marginRight="@dimen/_30sdp"
+                     android:checked="true" />
+             </LinearLayout>
+
+             <View
+                 android:layout_width="@dimen/_31sdp"
+                 android:layout_height="@dimen/_1sdp"
+                 android:background="@color/white" />
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/_90sdp"
+                 android:background="@drawable/selector_item"
+                 android:orientation="horizontal">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:layout_marginLeft="@dimen/_30sdp"
+                     android:text="确认免单"
+                     android:textColor="@color/black"
+                     android:textSize="@dimen/_32ssp" />
+
+                 <TextView
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:layout_marginLeft="@dimen/_21sdp"
+                     android:layout_weight="1"
+                     android:textColor="@color/black" />
+
+                 <android.support.v7.widget.AppCompatCheckBox
+                     android:id="@+id/querenmiandan"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:checked="true"
+                     android:layout_marginRight="@dimen/_30sdp" />
+             </LinearLayout>
+
+             <View
+                 android:layout_width="@dimen/_31sdp"
+                 android:layout_height="@dimen/_1sdp"
+                 android:background="@color/white" />
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/_90sdp"
+                 android:background="@drawable/selector_item"
+                 android:orientation="horizontal">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:layout_marginLeft="@dimen/_30sdp"
+                     android:text="减免金额"
+                     android:textColor="@color/black"
+                     android:textSize="@dimen/_32ssp" />
+
+                 <TextView
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:layout_marginLeft="@dimen/_21sdp"
+                     android:layout_weight="1"
+                     android:textColor="@color/black" />
+
+                 <android.support.v7.widget.AppCompatCheckBox
+                     android:id="@+id/querenjianmian"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:layout_marginRight="@dimen/_30sdp"
+                     android:checked="true" />
+             </LinearLayout>
+
+             <View
+                 android:layout_width="@dimen/_31sdp"
+                 android:layout_height="@dimen/_1sdp"
+                 android:background="@color/white" />
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/_90sdp"
+                 android:background="@drawable/selector_item"
+                 android:orientation="horizontal">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:layout_marginLeft="@dimen/_30sdp"
+                     android:text="权限打折"
+                     android:textColor="@color/black"
+                     android:textSize="@dimen/_32ssp" />
+
+                 <TextView
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:layout_marginLeft="@dimen/_21sdp"
+                     android:layout_weight="1"
+                     android:textColor="@color/black" />
+
+                 <android.support.v7.widget.AppCompatCheckBox
+                     android:id="@+id/quanxiandazhe"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:checked="true"
+                     android:layout_marginRight="@dimen/_30sdp" />
+             </LinearLayout>
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/_86sdp"
+                 android:paddingBottom="@dimen/_17sdp"
+                 android:paddingLeft="@dimen/_30sdp"
+                 android:paddingTop="@dimen/_27sdp"
+                 android:text="开单"
+                 android:textSize="@dimen/_27ssp"
+
+                 />
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/_90sdp"
+                 android:background="@drawable/selector_item"
+                 android:orientation="horizontal">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:layout_marginLeft="@dimen/_30sdp"
+                     android:text="加菜"
+                     android:textColor="@color/black"
+                     android:textSize="@dimen/_32ssp" />
+
+                 <TextView
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:layout_marginLeft="@dimen/_21sdp"
+                     android:layout_weight="1"
+                     android:textColor="@color/black" />
+
+                 <android.support.v7.widget.AppCompatCheckBox
+                     android:id="@+id/jiacai"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:layout_marginRight="@dimen/_30sdp"
+                     android:checked="true" />
+             </LinearLayout>
+
+             <View
+                 android:layout_width="@dimen/_31sdp"
+                 android:layout_height="@dimen/_1sdp"
+                 android:background="@color/white" />
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/_90sdp"
+                 android:background="@drawable/selector_item"
+                 android:orientation="horizontal">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:layout_marginLeft="@dimen/_30sdp"
+                     android:text="换桌"
+                     android:textColor="@color/black"
+                     android:textSize="@dimen/_32ssp" />
+
+                 <TextView
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:layout_marginLeft="@dimen/_21sdp"
+                     android:layout_weight="1"
+                     android:textColor="@color/black" />
+
+                 <android.support.v7.widget.AppCompatCheckBox
+                     android:id="@+id/huanzhuo"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:checked="true"
+                     android:layout_marginRight="@dimen/_30sdp" />
+             </LinearLayout>
+
+             <View
+                 android:layout_width="@dimen/_31sdp"
+                 android:layout_height="@dimen/_1sdp"
+                 android:background="@color/white" />
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/_90sdp"
+                 android:background="@drawable/selector_item"
+                 android:orientation="horizontal">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:layout_marginLeft="@dimen/_30sdp"
+                     android:text="撤单"
+                     android:textColor="@color/black"
+                     android:textSize="@dimen/_32ssp" />
+
+                 <TextView
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:layout_marginLeft="@dimen/_21sdp"
+                     android:layout_weight="1"
+                     android:textColor="@color/black" />
+
+                 <android.support.v7.widget.AppCompatCheckBox
+                     android:id="@+id/chedan"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:layout_marginRight="@dimen/_30sdp"
+                     android:checked="true" />
+             </LinearLayout>
+
+             <View
+                 android:layout_width="@dimen/_31sdp"
+                 android:layout_height="@dimen/_1sdp"
+                 android:background="@color/white" />
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/_90sdp"
+                 android:background="@drawable/selector_item"
+                 android:orientation="horizontal">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:layout_marginLeft="@dimen/_30sdp"
+                     android:text="并单"
+                     android:textColor="@color/black"
+                     android:textSize="@dimen/_32ssp" />
+
+                 <TextView
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:layout_marginLeft="@dimen/_21sdp"
+                     android:layout_weight="1"
+                     android:textColor="@color/black" />
+
+                 <android.support.v7.widget.AppCompatCheckBox
+                     android:id="@+id/bingdan"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:checked="true"
+                     android:layout_marginRight="@dimen/_30sdp" />
+             </LinearLayout>
+
+             <View
+                 android:layout_width="@dimen/_31sdp"
+                 android:layout_height="@dimen/_1sdp"
+                 android:background="@color/white" />
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/_90sdp"
+                 android:background="@drawable/selector_item"
+                 android:orientation="horizontal">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:layout_marginLeft="@dimen/_30sdp"
+                     android:text="后厨打印"
+                     android:textColor="@color/black"
+                     android:textSize="@dimen/_32ssp" />
+
+                 <TextView
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:layout_marginLeft="@dimen/_21sdp"
+                     android:layout_weight="1"
+                     android:textColor="@color/black" />
+
+                 <android.support.v7.widget.AppCompatCheckBox
+                     android:id="@+id/houchudayin"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:checked="true"
+                     android:layout_marginRight="@dimen/_30sdp" />
+             </LinearLayout>
+
+             <View
+                 android:layout_width="@dimen/_31sdp"
+                 android:layout_height="@dimen/_1sdp"
+                 android:background="@color/white" />
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/_90sdp"
+                 android:background="@drawable/selector_item"
+                 android:orientation="horizontal">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:layout_marginLeft="@dimen/_30sdp"
+                     android:text="前台打印"
+                     android:textColor="@color/black"
+                     android:textSize="@dimen/_32ssp" />
+
+                 <TextView
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:layout_marginLeft="@dimen/_21sdp"
+                     android:layout_weight="1"
+                     android:textColor="@color/black" />
+
+                 <android.support.v7.widget.AppCompatCheckBox
+                     android:id="@+id/qiantaidayin"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:checked="true"
+                     android:layout_marginRight="@dimen/_30sdp" />
+             </LinearLayout>
+
+             <View
+                 android:layout_width="@dimen/_31sdp"
+                 android:layout_height="@dimen/_1sdp"
+                 android:background="@color/white" />
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/_90sdp"
+                 android:background="@drawable/selector_item"
+                 android:orientation="horizontal">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:layout_marginLeft="@dimen/_30sdp"
+                     android:text="整单吹单"
+                     android:textColor="@color/black"
+                     android:textSize="@dimen/_32ssp" />
+
+                 <TextView
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:layout_marginLeft="@dimen/_21sdp"
+                     android:layout_weight="1"
+                     android:textColor="@color/black" />
+
+                 <android.support.v7.widget.AppCompatCheckBox
+                     android:id="@+id/zhengdancuidan"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:checked="true"
+                     android:layout_marginRight="@dimen/_30sdp" />
+             </LinearLayout>
+
+             <View
+                 android:layout_width="@dimen/_31sdp"
+                 android:layout_height="@dimen/_1sdp"
+                 android:background="@color/white" />
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/_90sdp"
+                 android:background="@drawable/selector_item"
+                 android:orientation="horizontal">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:layout_marginLeft="@dimen/_30sdp"
+                     android:text="修改人数"
+                     android:textColor="@color/black"
+                     android:textSize="@dimen/_32ssp" />
+
+                 <TextView
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:layout_marginLeft="@dimen/_21sdp"
+                     android:layout_weight="1"
+                     android:textColor="@color/black" />
+
+                 <android.support.v7.widget.AppCompatCheckBox
+                     android:id="@+id/xiugairenshu"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:checked="true"
+                     android:layout_marginRight="@dimen/_30sdp" />
+             </LinearLayout>
+
+             <View
+                 android:layout_width="@dimen/_31sdp"
+                 android:layout_height="@dimen/_1sdp"
+                 android:background="@color/white" />
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/_90sdp"
+                 android:background="@drawable/selector_item"
+                 android:orientation="horizontal">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:layout_marginLeft="@dimen/_30sdp"
+                     android:text="账单结算"
+                     android:textColor="@color/black"
+                     android:textSize="@dimen/_32ssp" />
+
+                 <TextView
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:layout_marginLeft="@dimen/_21sdp"
+                     android:layout_weight="1"
+                     android:textColor="@color/black" />
+
+                 <android.support.v7.widget.AppCompatCheckBox
+                     android:id="@+id/zhangdanjiesuan"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:checked="true"
+                     android:layout_marginRight="@dimen/_30sdp" />
+             </LinearLayout>
+
+             <View
+                 android:layout_width="@dimen/_31sdp"
+                 android:layout_height="@dimen/_1sdp"
+                 android:background="@color/white" />
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/_90sdp"
+                 android:background="@drawable/selector_item"
+                 android:orientation="horizontal">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:layout_marginLeft="@dimen/_30sdp"
+                     android:text="交班打印"
+                     android:textColor="@color/black"
+                     android:textSize="@dimen/_32ssp" />
+
+                 <TextView
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:layout_marginLeft="@dimen/_21sdp"
+                     android:layout_weight="1"
+                     android:textColor="@color/black" />
+
+                 <android.support.v7.widget.AppCompatCheckBox
+                     android:id="@+id/jiaobandayin"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:checked="true"
+                     android:layout_marginRight="@dimen/_30sdp" />
+             </LinearLayout>
+         </LinearLayout>-->
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

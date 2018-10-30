@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/setting_bg"
+    android:orientation="vertical"
+    tools:context="com.admin.shopkeeper.ui.activity.activityOfBoss.returnanalysis.ReturnAnalysisActivity">
+
+    <include layout="@layout/common_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/desk_no"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_item"
+            android:drawableRight="@mipmap/sort_default"
+            android:gravity="center"
+            android:paddingRight="@dimen/_32sdp"
+            android:text="桌位序号" />
+
+        <View style="@style/LineVerStyle" />
+
+        <TextView
+            android:id="@+id/desk_select"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_item"
+            android:drawableRight="@mipmap/choice_icon"
+            android:gravity="center"
+            android:paddingRight="@dimen/_32sdp"
+            android:text="筛选" />
+
+    </LinearLayout>
+
+    <View style="@style/LineHorStyle" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_30sdp" />
+
+</LinearLayout>

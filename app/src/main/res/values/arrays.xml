@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="orderStatus">
+        <item>全部</item>
+        <item>已撤销</item>
+        <item>已支付</item>
+    </string-array>
+
+
+    <!--  堂点订单、预定订单、外卖订单、快餐订单-->
+    <!--1.预定菜品 2 预定桌位  3.外卖  4.快餐 5.扫码点餐 6.排队点餐 7.店内点餐-->
+    <string-array name="orderType">
+
+        <item>全部</item>
+        <item>预定菜品</item>
+        <item>预定桌位</item>
+        <item>外卖</item>
+        <item>快餐</item>
+        <item>扫码点餐</item>
+        <item>排队点餐</item>
+        <item>店内点餐</item>
+
+    </string-array>
+
+    <string-array name="genderArray">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+    <string-array name="tableArray1">
+        <item>开台</item>
+        <item>开台点菜</item>
+    </string-array>
+
+    <string-array name="tableArray4">
+        <item>结账</item>
+        <item>加菜</item>
+        <item>详情</item>
+        <item>扫码结账</item>
+        <!--<item>撤单</item>-->
+    </string-array>
+
+    <string-array name="tableArray2">
+        <item>点菜</item>
+        <item>清台</item>
+    </string-array>
+    <string-array name="orderDetailFood">
+        <item>转菜</item>
+        <item>催菜</item>
+        <item>退菜</item>
+        <item>赠送</item>
+    </string-array>
+
+
+    <string-array name="payArr">
+        <item>现金</item>
+        <item>主扫微信</item>
+        <item>主扫支付宝</item>
+    </string-array>
+
+    <string-array name="payArr2">
+        <item>会员卡</item>
+        <item>被扫微信</item>
+        <item>挂账</item>
+        <item>被扫支付宝</item>
+        <item>银行卡</item>
+        <item>美团</item>
+        <item>大众点评</item>
+    </string-array>
+
+    <string-array name="payType">
+        <item>现金</item>
+        <item>银行卡</item>
+        <item>主扫微信</item>
+        <item>挂账</item>
+        <item>会员卡</item>
+        <item>被扫支付宝</item>
+        <item>被扫微信</item>
+        <item>美团</item>
+        <item>大众点评券</item>
+        <item>主扫支付宝</item>
+    </string-array>
+
+    <string-array name="saleType">
+        <item>店长推荐</item>
+        <item>厨师推荐</item>
+        <item>招牌菜</item>
+        <item>原味</item>
+        <item>滋补</item>
+        <item>生鲜</item>
+    </string-array>
+
+    <string-array name="printType">
+        <item></item>
+        <item>菜品</item>
+        <item>账单</item>
+        <item>前台</item>
+        <item>出菜口</item>
+        <item>交班单</item>
+        <item>打印机</item>
+    </string-array>
+
+    <string-array name="printType2">
+        <item></item>
+        <item>WIFI打印机</item>
+        <item>电脑网口打印机</item>
+        <item>安卓网口打印机</item>
+        <item>苹果网口打印机</item>
+    </string-array>
+    <string-array name="printType3">
+        <item></item>
+        <item>本地打印</item>
+        <item>驱动打印</item>
+    </string-array>
+    <string-array name="couponType">
+        <item>全部</item>
+        <item>满送券</item>
+        <item>代金券</item>
+        <item>商品券</item>
+        <item>团购券</item>
+    </string-array>
+</resources>

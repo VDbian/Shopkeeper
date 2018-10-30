@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <RelativeLayout
+        android:layout_width="@dimen/_600sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_dialog_bg">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/titleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/foodName"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/_40sdp"
+                android:paddingRight="@dimen/_40sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_36ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/tipBtn"
+                app:layout_constraintEnd_toStartOf="@+id/tipBtn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tipBtn"
+                tools:text="红汤牛肉" />
+
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/tipBtn"
+                android:layout_width="@dimen/_96sdp"
+                android:layout_height="@dimen/_96sdp"
+                android:background="@null"
+                android:src="@mipmap/tip_close_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tipBtn" />
+        </android.support.constraint.ConstraintLayout>
+
+
+        <com.admin.shopkeeper.weight.MaxHeightScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleLayout"
+            android:layout_marginBottom="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:fadeScrollbars="false"
+            android:scrollbars="none"
+            app:maxHeight="@dimen/_500sdp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_40sdp"
+                android:paddingRight="@dimen/_40sdp">
+
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/danJiaLayout"
+                    style="@style/OrderDialogLayoutStyle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/labelUnitPrice"
+                        style="@style/OrderDialogOrderLabelStyle"
+                        android:text="@string/string_danjia_number_table"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/unitPriceText"
+                        style="@style/OrderDialogTextStyle"
+                        android:inputType="number"
+                        app:layout_constraintBottom_toBottomOf="@+id/labelUnitPrice"
+                        app:layout_constraintLeft_toRightOf="@+id/labelUnitPrice"
+                        app:layout_constraintRight_toLeftOf="@+id/numberLayout"
+                        app:layout_constraintTop_toTopOf="@+id/labelUnitPrice"
+                        tools:text="25/kg" />
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/numberLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout_editor_absoluteX="206dp">
+
+                        <android.support.v7.widget.AppCompatImageButton
+                            android:id="@+id/reduce"
+                            android:layout_width="@dimen/_76sdp"
+                            android:layout_height="@dimen/_76sdp"
+                            android:background="@drawable/selector_common"
+                            android:src="@mipmap/num_reduce"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/numberText"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_28ssp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/add"
+                            app:layout_constraintStart_toEndOf="@id/reduce"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <android.support.v7.widget.AppCompatImageButton
+                            android:id="@+id/add"
+                            android:layout_width="@dimen/_76sdp"
+                            android:layout_height="@dimen/_76sdp"
+                            android:background="@drawable/selector_common"
+                            android:src="@mipmap/num_add"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/gray"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/weightLayout"
+                    style="@style/OrderDialogLayoutStyle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/labelWeight"
+                        style="@style/OrderDialogOrderLabelStyle"
+                        android:text="@string/string_count_number_label"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/weightText"
+                        style="@style/OrderDialogEditStyle"
+                        android:hint="@string/string_weight_number_table"
+                        android:inputType="numberDecimal"
+                        app:layout_constraintBottom_toBottomOf="@+id/labelWeight"
+                        app:layout_constraintLeft_toRightOf="@+id/labelWeight"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/labelWeight" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/gray"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/specLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/labelSpec"
+                        style="@style/OrderDialogOrderLabelStyle"
+                        android:layout_height="@dimen/_88sdp"
+                        android:text="@string/string_spec_label"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/specRecyclerView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/labelSpec" />
+
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/jialiaoLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/labelJiawei"
+                        style="@style/OrderDialogOrderLabelStyle"
+                        android:layout_height="@dimen/_88sdp"
+                        android:text="@string/string_jiaoliao_label"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/jialiaoRecyclerView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/labelJiawei" />
+
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/kouweiLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/labelKouwei"
+                        style="@style/OrderDialogOrderLabelStyle"
+                        android:layout_height="@dimen/_88sdp"
+                        android:text="@string/string_kouwei_label"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/kouweiRecyclerView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/labelKouwei" />
+
+                </android.support.constraint.ConstraintLayout>
+
+            </LinearLayout>
+        </com.admin.shopkeeper.weight.MaxHeightScrollView>
+
+        <LinearLayout
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scrollView"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_56sdp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/leftBtn"
+                    style="@style/ButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="@dimen/_25sdp"
+                    android:layout_marginLeft="@dimen/_50sdp"
+                    android:layout_marginRight="@dimen/_25sdp"
+                    android:layout_marginStart="@dimen/_50sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_dialog_btn"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_36ssp"
+                    tools:text="确定" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/rightBtn"
+                    style="@style/ButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="@dimen/_50sdp"
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    android:layout_marginRight="@dimen/_50sdp"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_dialog_btn"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_36ssp"
+                    tools:text="开台点菜" />
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/OneBtn"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="@dimen/_56sdp"
+                android:layout_marginEnd="@dimen/_50sdp"
+                android:layout_marginLeft="@dimen/_50sdp"
+                android:layout_marginRight="@dimen/_50sdp"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:background="@drawable/selector_dialog_btn"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_36ssp"
+                tools:text="确定" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

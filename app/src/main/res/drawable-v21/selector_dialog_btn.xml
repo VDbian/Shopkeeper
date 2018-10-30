@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/shape_login_btn_press" android:state_enabled="false" />
+
+    <item android:state_enabled="true">
+        <ripple xmlns:android="http://schemas.android.com/apk/res/android"
+
+            android:color="@color/colorPress" android:radius="@dimen/_44sdp"><!--//点击时波纹的颜色-->
+            <item>
+                <shape>
+
+                    <corners android:radius="@dimen/_44sdp" />
+                    <stroke android:width="@dimen/_2sdp" android:color="@color/colorDialogBtnStroke" />
+                    <solid android:color="@color/colorDialogBtn" /><!-- 填充的颜色 -->
+                </shape>
+            </item>
+
+            <!--&lt;!&ndash;//未点击时控件的背景（可以是图片，可以是颜色，也可以是drawable里的xml背景（比如圆角））&ndash;&gt;-->
+        </ripple>
+    </item>
+
+</selector>
+

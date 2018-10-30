@@ -1,0 +1,10 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <corners android:radius="@dimen/_44sdp" />
+            <solid android:color="@color/colorFood" /><!-- 填充的颜色 -->
+        </shape>
+    </item>
+    <item android:drawable="@drawable/shape_login_btn_press" android:state_pressed="true" />   <!--点击时手指未松开的背景-->
+</selector>

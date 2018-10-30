@@ -1,0 +1,168 @@
+<resources>
+    <string name="app_name">东家二掌柜</string>
+    <string name="title_home" translatable="false">Home</string>
+    <string name="title_dashboard" translatable="false">Dashboard</string>
+    <string name="title_notifications" translatable="false">Notifications</string>
+    <string name="title_activity_main" translatable="false">MainActivity</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_message_detail">MessageDetailActivity</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A season metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The season is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the season provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the season creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The season environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of season occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the season environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the season environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of season at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All season objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because season cannot pass "
+        "through other season, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="title_activity_person">PersonActivity</string>
+    <string name="title_activity_person_setting">PersonSettingActivity</string>
+    <string name="title_activity_forget_password">ForgetPasswordActivity</string>
+    <string name="title_activity_order_detail">OrderDetailActivity</string>
+    <string name="title_activity_order_food">OrderFoodActivity</string>
+    <string name="string_current_table">当前桌台</string>
+    <string name="string_target_table">目标桌台</string>
+    <string name="string_people_number_table">用餐人数</string>
+    <string name="string_canju_number_table">餐具数</string>
+    <string name="string_hint_target_tabel">请输入目标桌台号</string>
+    <string name="string_hint_people_number">请输入用餐人数</string>
+    <string name="string_hint_canju_number">请输入餐具数</string>
+    <string name="title_activity_config">ConfigActivity</string>
+    <string name="string_config_id">店铺ID</string>
+    <string name="string_hint_id">请输入店铺ID</string>
+    <string name="title_activity_config_room">ConfigRoomActivity</string>
+    <string name="string_config_room_label">房间列表</string>
+    <string name="string_config_menu_label">菜单列表</string>
+    <string name="string_config_meal_label">套餐列表</string>
+    <string name="string_client">出现异常错误，请联系客服</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_menu_type">MenuTypeActivity</string>
+    <string name="title_activity_foods">FoodsActivity</string>
+    <string name="title_activity_food_list">FoodListActivity</string>
+    <string name="string_money">￥%1$.2f</string>
+    <string name="string_unit">&#160;/%s</string>
+    <string name="title_activity_order">OrderActivity</string>
+    <string name="string_danjia_number_table">单价</string>
+    <string name="string_weight_number_table">请输入数字</string>
+    <string name="string_weight_number_label">重量</string>
+    <string name="string_count_number_label">数量</string>
+    <string name="string_spec_label">规格</string>
+    <string name="string_jiaoliao_label">加料</string>
+    <string name="string_kouwei_label">做法</string>
+    <string name="string_unit_price">￥%1$.2f/%2$s</string>
+    <string name="string_weight_format">%1$.3f</string>
+    <string name="string_order_id">订单编号：%1$s</string>
+    <string name="string_order_money">订单金额：￥%1$.2f</string>
+    <string name="string_order_time">下单时间：%1$s</string>
+    <string name="string_table_id">桌台编号：%1$s</string>
+    <string name="string_buy_shop">采购商家：%1$s</string>
+    <string name="string_order_operator">点餐员：%1$s</string>
+    <string name="string_order_remark">备注信息：%1$s</string>
+    <string name="string_order_pay_type">支付方式：%1$s</string>
+    <string name="title_activity_table_operation">TableOperationActivity</string>
+    <string name="string_print_1">交班人：%1s\n</string>
+    <string name="string_request_error">数据库查询失败</string>
+    <string name="title_activity_bill">BillActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_order_list">OrderListActivity</string>
+    <string name="title_activity_message_list">MessageListActivity</string>
+    <string name="title_activity_wai_mai">WaiMaiActivity</string>
+    <string name="title_activity_yu_ding">YuDingActivity</string>
+    <string name="title_activity_big_image">BigImageActivity</string>
+    <string name="title_activity_meal">MealActivity</string>
+
+    <string name="quick_bill">快速\n结账</string>
+    <string name="scan_bill">扫码\n结账</string>
+    <string name="other_bill">其他\n结账</string>
+</resources>

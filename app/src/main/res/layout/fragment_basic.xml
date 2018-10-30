@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/setting_bg"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            style="@style/LineHorStyle"
+            android:layout_marginTop="@dimen/_29sdp" />
+
+        <!--订单管理-->
+        <LinearLayout
+            android:id="@+id/order_order_manage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_90sdp"
+            android:background="@drawable/selector_item"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_58sdp"
+                android:layout_height="@dimen/_58sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:src="@mipmap/order_icon_manager" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_21sdp"
+                android:layout_weight="1"
+                android:text="订单管理"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:src="@mipmap/list_icon_arrow_right" />
+        </LinearLayout>
+
+        <View style="@style/LineHor2Style" />
+        <!--挂账管理-->
+        <LinearLayout
+            android:id="@+id/order_guazhang"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_90sdp"
+            android:background="@drawable/selector_item"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_58sdp"
+                android:layout_height="@dimen/_58sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:src="@mipmap/order_icon_guazhang" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_21sdp"
+                android:layout_weight="1"
+                android:text="挂账管理"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:src="@mipmap/list_icon_arrow_right" />
+        </LinearLayout>
+
+        <View style="@style/LineHor2Style" />
+        <!--订单敏感操作-->
+        <LinearLayout
+            android:id="@+id/order_sensitive_opearation"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_90sdp"
+            android:background="@drawable/selector_item"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_58sdp"
+                android:layout_height="@dimen/_58sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:src="@mipmap/order_icon_oprate" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_21sdp"
+                android:layout_weight="1"
+                android:text="订单敏感操作"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:src="@mipmap/list_icon_arrow_right" />
+        </LinearLayout>
+
+        <View style="@style/LineHor2Style" />
+        <!-- 退菜统计详细-->
+        <LinearLayout
+            android:id="@+id/order_return_foot"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_90sdp"
+            android:background="@drawable/selector_item"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_58sdp"
+                android:layout_height="@dimen/_58sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:src="@mipmap/statistics_icon_repeat" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_21sdp"
+                android:layout_weight="1"
+                android:text="退菜统计详细"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:src="@mipmap/list_icon_arrow_right" />
+        </LinearLayout>
+
+        <View style="@style/LineHor2Style" />
+    </LinearLayout>
+
+</ScrollView>

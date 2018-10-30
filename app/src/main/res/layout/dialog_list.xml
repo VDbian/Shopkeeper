@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="@dimen/_600sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_dialog_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/_20sdp"
+            android:text="标题"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_40ssp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_500sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:paddingLeft="@dimen/_40sdp"
+            android:paddingRight="@dimen/_40sdp" />
+
+        <Button
+            android:id="@+id/OneBtn"
+            style="@style/ButtonStyle"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:background="@drawable/selector_dialog_btn"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_30ssp" />
+    </LinearLayout>
+</FrameLayout>

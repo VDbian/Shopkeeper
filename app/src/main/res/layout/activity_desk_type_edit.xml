@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/setting_bg"
+    android:orientation="vertical"
+    tools:context="com.admin.shopkeeper.ui.activity.activityOfBoss.returnanalysis.ReturnAnalysisActivity">
+
+    <include layout="@layout/boss_common_toolbar" />
+
+    <View
+        style="@style/LineHorStyle"
+        android:layout_marginTop="@dimen/_30sdp" />
+
+    <LinearLayout style="@style/SettingItemStyle">
+
+        <TextView
+            style="@style/SettingItemTextStyle"
+            android:text="类别名称" />
+
+        <EditText
+            android:id="@+id/edit_name"
+            style="@style/SettingItemEditStyle"
+            android:hint="请输入类别名称" />
+
+    </LinearLayout>
+
+    <View style="@style/LineHor2Style" />
+
+    <LinearLayout style="@style/SettingItemStyle">
+
+        <TextView
+            style="@style/SettingItemTextStyle"
+            android:text="排序标识" />
+
+        <EditText
+            android:id="@+id/edit_type"
+            style="@style/SettingItemEditStyle"
+            android:hint="请输入排序标识" />
+
+    </LinearLayout>
+
+    <View style="@style/LineHor2Style" />
+
+    <LinearLayout style="@style/SettingItemStyle">
+
+        <TextView
+            style="@style/SettingItemTextStyle"
+            android:text="人数范围" />
+
+        <Spinner
+            android:id="@+id/edit_people"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_32sdp"
+            android:layout_marginRight="@dimen/_32sdp" />
+    </LinearLayout>
+
+    <View style="@style/LineHorStyle" />
+
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/setting_bg"
+    android:orientation="vertical"
+    tools:context="com.admin.shopkeeper.ui.activity.activityOfBoss.returnanalysis.ReturnAnalysisActivity">
+
+    <include layout="@layout/boss_common_toolbar" />
+
+    <View
+        style="@style/LineHorStyle"
+        android:layout_marginTop="@dimen/_30sdp" />
+
+    <LinearLayout style="@style/SettingItemStyle">
+
+        <TextView
+            style="@style/SettingItemText2Style"
+            android:text="线下券名称" />
+
+        <EditText
+            android:id="@+id/item_name_coupon_line"
+            style="@style/SettingItemEditStyle"
+            android:hint="请输入线下券名称" />
+
+    </LinearLayout>
+
+
+    <View style="@style/LineHorStyle" />
+
+    <LinearLayout style="@style/SettingItemStyle">
+
+        <TextView
+            style="@style/SettingItemText2Style"
+            android:text="线下券数量" />
+
+        <EditText
+            android:id="@+id/item_nums_coupon_line"
+            android:inputType="number"
+            style="@style/SettingItemEditStyle"
+            android:hint="请输入线下券数量" />
+
+    </LinearLayout>
+
+
+    <View style="@style/LineHorStyle" />
+
+    <LinearLayout style="@style/SettingItemStyle">
+
+        <TextView
+            style="@style/SettingItemText2Style"
+            android:text="最大使用量" />
+
+        <EditText
+            android:id="@+id/item_max_use_coupon_line"
+            style="@style/SettingItemEditStyle"
+            android:hint="请输入单次最大使用量"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+
+    <View style="@style/LineHorStyle" />
+
+    <LinearLayout style="@style/SettingItemStyle">
+
+        <TextView
+            style="@style/SettingItemText2Style"
+            android:text="优惠金额" />
+
+        <EditText
+            android:id="@+id/item_money_free_coupon_line"
+            style="@style/SettingItemEditStyle"
+            android:hint="请输入优惠金额"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+
+    <View style="@style/LineHorStyle" />
+
+    <LinearLayout style="@style/SettingItemStyle">
+
+        <TextView
+            style="@style/SettingItemText2Style"
+            android:text="适用商家" />
+
+        <TextView
+            android:id="@+id/item_shop_coupon_line"
+            style="@style/SettingItemEditStyle"
+            android:gravity="center_vertical"
+            android:hint="请选择适用商家" />
+
+    </LinearLayout>
+
+
+    <View style="@style/LineHorStyle" />
+
+    <LinearLayout style="@style/SettingItemStyle">
+
+        <TextView
+            style="@style/SettingItemText2Style"
+            android:text="是否启用" />
+
+        <RadioGroup
+            android:id="@+id/item_enable_coupon_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="是" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="否" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <View style="@style/LineHorStyle" />
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/name"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_88sdp"
+    android:background="@color/white"
+    android:gravity="center"
+    android:paddingLeft="@dimen/_30sdp"
+    android:paddingRight="@dimen/_30sdp"
+    android:textColor="@drawable/selector_radio_text_color"
+    android:textSize="@dimen/_34ssp" />

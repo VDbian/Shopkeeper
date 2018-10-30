@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/setting_bg"
+    android:orientation="vertical"
+    tools:context="com.admin.shopkeeper.ui.activity.activityOfBoss.returnanalysis.ReturnAnalysisActivity">
+
+    <include layout="@layout/common_toolbar" />
+
+    <View
+        style="@style/LineHorStyle"
+        android:layout_marginTop="@dimen/_30sdp" />
+
+    <LinearLayout
+        android:id="@+id/ll_area"
+        style="@style/SettingItemStyle">
+
+        <TextView
+            style="@style/SettingItemTextStyle"
+            android:text="桌位区域" />
+
+        <TextView
+            android:id="@+id/edit_area"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:drawablePadding="@dimen/_20sdp"
+            android:drawableRight="@mipmap/list_icon_arrow_right"
+            android:gravity="center_vertical|right"
+            android:textColor="#999999"
+            android:textSize="@dimen/_34ssp" />
+
+    </LinearLayout>
+
+    <View style="@style/LineHor2Style" />
+
+    <LinearLayout
+        android:id="@+id/ll_room"
+        style="@style/SettingItemStyle">
+
+        <TextView
+            style="@style/SettingItemTextStyle"
+            android:text="房间" />
+
+        <TextView
+            android:id="@+id/edit_room"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:drawablePadding="@dimen/_20sdp"
+            android:drawableRight="@mipmap/list_icon_arrow_right"
+            android:gravity="center_vertical|right"
+            android:textColor="#999999"
+            android:textSize="@dimen/_34ssp" />
+
+    </LinearLayout>
+
+    <View style="@style/LineHor2Style" />
+
+    <LinearLayout
+        android:id="@+id/ll_no"
+        style="@style/SettingItemStyle">
+
+        <TextView
+            style="@style/SettingItemTextStyle"
+            android:text="桌位号" />
+
+        <TextView
+            android:id="@+id/edit_table"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:drawablePadding="@dimen/_20sdp"
+            android:drawableRight="@mipmap/list_icon_arrow_right"
+            android:gravity="center_vertical|right"
+            android:textColor="#999999"
+            android:textSize="@dimen/_34ssp" />
+
+    </LinearLayout>
+
+    <View style="@style/LineHorStyle" />
+
+</LinearLayout>

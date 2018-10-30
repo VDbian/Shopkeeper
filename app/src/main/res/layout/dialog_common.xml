@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="@dimen/_600sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_dialog_bg">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/foodName"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/_40sdp"
+            android:paddingRight="@dimen/_40sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_36ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/tipBtn"
+            app:layout_constraintEnd_toStartOf="@+id/tipBtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tipBtn"
+            tools:layout_editor_absoluteX="0dp"
+            tools:text="红汤牛肉" />
+
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/tipBtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+
+            android:background="@null"
+            android:src="@mipmap/tip_close_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="252dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tipBtn"
+            tools:layout_editor_absoluteX="0dp" />
+
+
+        <LinearLayout
+            android:id="@+id/btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_56sdp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/leftBtn"
+                    style="@style/ButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="@dimen/_25sdp"
+                    android:layout_marginLeft="@dimen/_50sdp"
+                    android:layout_marginRight="@dimen/_25sdp"
+                    android:layout_marginStart="@dimen/_50sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_dialog_btn"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_36ssp"
+                    tools:text="确定" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/rightBtn"
+                    style="@style/ButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="@dimen/_50sdp"
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    android:layout_marginRight="@dimen/_50sdp"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/selector_dialog_btn"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_36ssp"
+                    tools:text="开台点菜" />
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatButton
+
+                android:id="@+id/OneBtn"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="@dimen/_56sdp"
+                android:layout_marginEnd="@dimen/_50sdp"
+                android:layout_marginLeft="@dimen/_50sdp"
+                android:layout_marginRight="@dimen/_50sdp"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:background="@drawable/selector_dialog_btn"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_36ssp"
+                tools:text="确定" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_40sdp"
+            android:paddingRight="@dimen/_40sdp"
+            app:layout_constraintBottom_toTopOf="@+id/btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tipBtn"
+            tools:layout_editor_absoluteX="0dp">
+
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/currLayout"
+                style="@style/OrderDialogLayoutStyle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/labelCurr"
+                    style="@style/OrderDialogLabelStyle"
+
+                    android:text="@string/string_current_table"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="30dp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/currText"
+                    style="@style/OrderDialogTextStyle"
+
+                    app:layout_constraintBottom_toBottomOf="@+id/labelCurr"
+                    app:layout_constraintLeft_toRightOf="@+id/labelCurr"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/labelCurr"
+                    tools:text="A101" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/gray"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteX="30dp" />
+            </android.support.constraint.ConstraintLayout>
+
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/targetLayout"
+                style="@style/OrderDialogLayoutStyle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/labelTarget"
+                    style="@style/OrderDialogLabelStyle"
+
+                    android:text="@string/string_target_table"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="30dp" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/targetText"
+                    style="@style/OrderDialogEditStyle"
+
+                    android:hint="@string/string_hint_target_tabel"
+                    app:layout_constraintBottom_toBottomOf="@+id/labelTarget"
+                    app:layout_constraintLeft_toRightOf="@+id/labelTarget"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/labelTarget" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/gray"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteX="30dp" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+
+                android:id="@+id/peopleLayout"
+                style="@style/OrderDialogLayoutStyle"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/labelPeopleNum"
+                    style="@style/OrderDialogLabelStyle"
+
+
+                    android:text="@string/string_people_number_table"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="30dp" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/peopleText"
+                    android:inputType="number"
+                    style="@style/OrderDialogEditStyle"
+                    android:hint="@string/string_hint_people_number"
+                    app:layout_constraintBottom_toBottomOf="@+id/labelPeopleNum"
+                    app:layout_constraintLeft_toRightOf="@+id/labelPeopleNum"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/labelPeopleNum" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/gray"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+
+                android:id="@+id/canJuLayout"
+                style="@style/OrderDialogLayoutStyle"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/labelCanjuNum"
+
+                    style="@style/OrderDialogLabelStyle"
+                    android:text="@string/string_canju_number_table"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="30dp" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/canJuText"
+                    style="@style/OrderDialogEditStyle"
+                    android:hint="@string/string_hint_canju_number"
+                    android:inputType="number"
+                    app:layout_constraintBottom_toBottomOf="@+id/labelCanjuNum"
+                    app:layout_constraintLeft_toRightOf="@+id/labelCanjuNum"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/labelCanjuNum" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/gray"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteX="30dp" />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/setting_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pop_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:background="@drawable/selector_item"
+            android:gravity="center"
+            android:text="排队号：A03"
+            android:textColor="#8F8F94"
+            android:textSize="@dimen/_36ssp" />
+
+        <View style="@style/LineHorStyle" />
+
+        <TextView
+            android:id="@+id/pop_call"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:background="@drawable/selector_item"
+            android:gravity="center"
+            android:text="呼叫"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_36ssp" />
+
+        <View style="@style/LineHorStyle" />
+
+        <TextView
+            android:id="@+id/pop_edit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:background="@drawable/selector_item"
+            android:gravity="center"
+            android:text="绑定桌位"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_36ssp" />
+
+        <View style="@style/LineHorStyle" />
+
+        <TextView
+            android:id="@+id/pop_delete"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:background="@drawable/selector_item"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/text_red"
+            android:textSize="@dimen/_36ssp" />
+
+        <TextView
+            android:id="@+id/pop_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@drawable/selector_item"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_36ssp" />
+    </LinearLayout>
+
+</RelativeLayout>

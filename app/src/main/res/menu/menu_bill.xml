@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.kongqw.myapplication.MainActivity">
+    <item
+        android:id="@+id/action_detail"
+        android:title="查看菜品详细"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/action_card"
+        android:title="清除优惠券"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/action_score"
+        android:title="清除会员积分"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/action_dazhe"
+        android:title="清除权限打折"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/action_jianmian"
+        android:title="清除权限减免"
+        app:showAsAction="collapseActionView" />
+
+</menu>

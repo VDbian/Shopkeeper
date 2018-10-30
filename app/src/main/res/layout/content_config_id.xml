@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_config_id">
+
+    <android.support.constraint.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_88sdp"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:background="@color/colorWhite">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/label"
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:gravity="center_vertical"
+            android:text="@string/string_config_id"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_34ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edit"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:background="@null"
+            android:hint="@string/string_hint_id"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_34ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/label"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_88sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:background="@drawable/selector_dialog_btn"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_36ssp" />
+
+</LinearLayout>

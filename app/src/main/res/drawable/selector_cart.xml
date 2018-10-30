@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <shape android:shape="oval">
+
+            <size android:width="@dimen/_88sdp" android:height="@dimen/_88sdp" />
+            <corners android:radius="@dimen/_44sdp" />
+            <stroke android:width="@dimen/_2sdp" android:color="@color/colorGray" />
+            <solid android:color="@color/colorWhite" /><!-- 填充的颜色 -->
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="oval">
+            <size android:width="@dimen/_88sdp" android:height="@dimen/_88sdp" />
+            <corners android:radius="@dimen/_40sdp" />
+            <solid android:color="@color/colorPress" /><!-- 填充的颜色 -->
+        </shape>
+    </item>  <!--点击时手指未松开的背景-->
+</selector>

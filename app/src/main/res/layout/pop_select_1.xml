@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/setting_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_90sdp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="筛选"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_36ssp" />
+
+        <View style="@style/LineHorStyle" />
+
+        <View
+            style="@style/LineHorStyle"
+            android:layout_marginTop="@dimen/_30sdp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout0"
+            style="@style/SettingItemStyle">
+
+
+            <TextView
+                style="@style/SettingItemTextStyle"
+                android:text="选择时间" />
+
+            <TextView
+                android:id="@+id/pop_time_typw"
+                style="@style/SettingItemEditStyle"
+                android:inputType="date"
+                android:gravity="center_vertical|right"
+                android:drawableRight="@mipmap/list_arrow_right"
+                android:paddingRight="@dimen/_30sdp"
+                android:drawablePadding="@dimen/_30sdp"
+                android:text="营业时间" />
+
+        </LinearLayout>
+
+        <View style="@style/LineHorStyle" />
+
+        <View
+            style="@style/LineHorStyle"
+            android:layout_marginTop="@dimen/_30sdp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            style="@style/SettingItemStyle">
+
+
+            <TextView
+                android:id="@+id/tv1"
+                style="@style/SettingItemTextStyle"
+                android:text="开始时间" />
+
+            <TextView
+                android:id="@+id/pop_starttime"
+                style="@style/SettingItemEditStyle"
+                android:inputType="date"
+                android:gravity="center_vertical"
+                android:hint="请选择开始时间" />
+
+        </LinearLayout>
+
+        <View style="@style/LineHorStyle" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            style="@style/SettingItemStyle">
+
+            <TextView
+                android:id="@+id/tv2"
+                style="@style/SettingItemTextStyle"
+                android:text="结束时间" />
+
+            <TextView
+                android:id="@+id/pop_endtime"
+                style="@style/SettingItemEditStyle"
+                android:inputType="date"
+                android:gravity="center_vertical"
+                android:hint="请选择结束时间" />
+
+        </LinearLayout>
+
+        <View style="@style/LineHorStyle" />
+
+        <View
+            style="@style/LineHorStyle"
+            android:layout_marginTop="@dimen/_30sdp" />
+
+        <LinearLayout
+            style="@style/SettingItemStyle">
+
+
+            <TextView
+                style="@style/SettingItemTextStyle"
+                android:text="选择门店" />
+
+            <TextView
+                android:id="@+id/tv_shop"
+                style="@style/SettingItemEditStyle"
+                android:inputType="date"
+                android:gravity="center_vertical|right"
+                android:drawableRight="@mipmap/list_arrow_right"
+                android:paddingRight="@dimen/_30sdp"
+                android:drawablePadding="@dimen/_30sdp"
+                android:hint="请选择门店" />
+
+        </LinearLayout>
+
+        <View style="@style/LineHorStyle" />
+
+        <LinearLayout
+            android:id="@+id/ll_food"
+            android:visibility="gone"
+            style="@style/SettingItemStyle">
+
+
+            <TextView
+                android:id="@+id/tv_food_choice"
+                style="@style/SettingItemTextStyle"
+                android:text="选择商品" />
+
+            <TextView
+                android:id="@+id/tv_food"
+                style="@style/SettingItemEditStyle"
+                android:inputType="date"
+                android:gravity="center_vertical|right"
+                android:drawableRight="@mipmap/list_arrow_right"
+                android:paddingRight="@dimen/_30sdp"
+                android:drawablePadding="@dimen/_30sdp"
+                android:hint="全部" />
+
+        </LinearLayout>
+
+        <View style="@style/LineHorStyle" />
+
+        <View
+            style="@style/LineHorStyle"
+            android:layout_marginTop="@dimen/_150sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_90sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pop_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="#333333"
+                android:textSize="@dimen/_34ssp" />
+
+            <TextView
+                android:id="@+id/pop_ok"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#4BAE4F"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_34ssp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/setting_bg"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            style="@style/LineHorStyle"
+            android:layout_marginTop="@dimen/_29sdp" />
+
+        <!--会员等级管理-->
+        <LinearLayout
+            android:id="@+id/market_member_level_manage_ll"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_90sdp"
+            android:background="@drawable/selector_item"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_58sdp"
+                android:layout_height="@dimen/_58sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:src="@mipmap/marketing_icon_viplevel" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_21sdp"
+                android:layout_weight="1"
+                android:text="会员等级管理"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:src="@mipmap/list_icon_arrow_right" />
+        </LinearLayout>
+
+        <View style="@style/LineHor2Style" />
+        <!--会员交易管理-->
+        <LinearLayout
+            android:id="@+id/member_manage_ll"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_90sdp"
+            android:background="@drawable/selector_item"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_58sdp"
+                android:layout_height="@dimen/_58sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:src="@mipmap/marketing_icon_vipdetail" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_21sdp"
+                android:layout_weight="1"
+                android:text="会员交易管理"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:src="@mipmap/list_icon_arrow_right" />
+        </LinearLayout>
+
+        <View style="@style/LineHor2Style" />
+        <!--充值方案管理-->
+        <LinearLayout
+            android:id="@+id/market_recharge_manage_ll"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_90sdp"
+            android:background="@drawable/selector_item"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_58sdp"
+                android:layout_height="@dimen/_58sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:src="@mipmap/marketing_icon_charge" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_21sdp"
+                android:layout_weight="1"
+                android:text="充值方案管理"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:src="@mipmap/list_icon_arrow_right" />
+        </LinearLayout>
+
+        <View style="@style/LineHor2Style" />
+
+        <View
+            style="@style/LineHorStyle"
+            android:layout_marginTop="@dimen/_29sdp" />
+
+        <!--优惠券管理-->
+        <LinearLayout
+            android:id="@+id/market_coupon_manage_ll"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_90sdp"
+            android:background="@drawable/selector_item"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_58sdp"
+                android:layout_height="@dimen/_58sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:src="@mipmap/market_icon_coupon_management" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_21sdp"
+                android:layout_weight="1"
+                android:text="微信券管理"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:src="@mipmap/list_icon_arrow_right" />
+        </LinearLayout>
+
+       <!-- <View style="@style/LineHor2Style" />
+
+        &lt;!&ndash;团购券管理&ndash;&gt;
+        <LinearLayout
+            android:id="@+id/market_group_manage_ll"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_90sdp"
+            android:background="@drawable/selector_item"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_58sdp"
+                android:layout_height="@dimen/_58sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:src="@mipmap/market_icon_group_buying" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_21sdp"
+                android:layout_weight="1"
+                android:text="团购券管理"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:src="@mipmap/list_icon_arrow_right" />
+        </LinearLayout>
+
+        <View style="@style/LineHor2Style" />
+
+        &lt;!&ndash;商品券管理&ndash;&gt;
+        <LinearLayout
+            android:id="@+id/market_commodity_coupon_manage_ll"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_90sdp"
+            android:background="@drawable/selector_item"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_58sdp"
+                android:layout_height="@dimen/_58sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:src="@mipmap/market_icon_commodity_coupon" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_21sdp"
+                android:layout_weight="1"
+                android:text="商品券管理"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:src="@mipmap/list_icon_arrow_right" />
+        </LinearLayout>-->
+
+        <View style="@style/LineHor2Style" />
+
+        <!--商品券管理-->
+        <LinearLayout
+            android:id="@+id/market_ll_mansong"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_90sdp"
+            android:background="@drawable/selector_item"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_58sdp"
+                android:layout_height="@dimen/_58sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:src="@mipmap/marketing_icon_fullgive" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_21sdp"
+                android:layout_weight="1"
+                android:text="微信满送规则"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:src="@mipmap/list_icon_arrow_right" />
+        </LinearLayout>
+
+        <View
+            style="@style/LineHorStyle"
+            android:layout_marginTop="@dimen/_29sdp" />
+        <!--线下券管理-->
+        <LinearLayout
+            android:id="@+id/market_ll_line_down"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_90sdp"
+            android:background="@drawable/selector_item"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_58sdp"
+                android:layout_height="@dimen/_58sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:src="@mipmap/marketing_icon_offlinequan" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_21sdp"
+                android:layout_weight="1"
+                android:text="其他券管理"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:src="@mipmap/list_icon_arrow_right" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

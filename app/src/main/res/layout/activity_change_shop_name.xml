@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/setting_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/boss_common_toolbar" />
+
+
+    <LinearLayout
+        android:id="@+id/set_rl_setting"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@drawable/selector_item"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_gravity="center_vertical"
+            android:text="商家名称"
+            android:textSize="@dimen/_32ssp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/change_shop_name_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_37sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:background="@null"
+            android:textSize="@dimen/_32ssp"
+            android:hint="智慧餐厅" />
+    </LinearLayout>
+</LinearLayout>

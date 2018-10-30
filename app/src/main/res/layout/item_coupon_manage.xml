@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_root"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_88sdp"
+    android:background="@drawable/selector_item"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/item_num"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingLeft="@dimen/_32sdp"
+        android:text="数量"
+        android:textSize="@dimen/_26ssp" />
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="名字"
+        android:textSize="@dimen/_26ssp" />
+
+    <TextView
+        android:id="@+id/item_coupon_money"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:text="优惠金额"
+        android:textSize="@dimen/_26ssp" />
+
+    <TextView
+        android:id="@+id/item_need_money"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:text="满足金额"
+        android:textSize="@dimen/_26ssp" />
+
+</LinearLayout>

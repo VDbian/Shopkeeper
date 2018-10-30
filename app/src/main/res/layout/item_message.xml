@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_common"
+    android:paddingBottom="@dimen/_16sdp"
+    android:paddingLeft="@dimen/_20sdp"
+    android:paddingRight="@dimen/_20sdp"
+    android:paddingTop="@dimen/_16sdp">
+
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/item_message_image"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/message_default_avatar"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/item_message_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:text="A102 开台成功"
+        android:textColor="#000000"
+        android:textSize="@dimen/_34ssp"
+        app:layout_constraintLeft_toRightOf="@+id/item_message_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/item_message_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="摘要"
+        android:textColor="#AAAAAA"
+        android:textSize="@dimen/_28ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/item_message_title"
+        app:layout_constraintTop_toBottomOf="@+id/item_message_title" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/item_message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:20"
+        android:textColor="#bfbfbf"
+        android:textSize="@dimen/_24ssp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
